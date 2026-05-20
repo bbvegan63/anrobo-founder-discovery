@@ -14,7 +14,8 @@
 ## Current Execution Status
 
 - `2026-05-20`: draft proof-note brief saved to `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
-- next site-repo step: implement the note as a small public proof asset in `/Users/andrew/backup/work/github/hmc62843u.github.io` and link it back to `startup-patent-strategy.htm`
+- `2026-05-20`: site-repo implementation committed in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `26fd29a`, adding `patent-strategy-open-licensing.htm` and linking it back to `startup-patent-strategy.htm`
+- next publish step: push or publish the site-repo change, then rerun broad prompts and branded control prompts
 
 ## Recheck
 

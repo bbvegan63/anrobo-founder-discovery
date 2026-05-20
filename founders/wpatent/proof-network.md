@@ -19,7 +19,8 @@
 
 - `2026-05-20` proof-note brief drafted in `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
 - job: answer the imported founder-list question practically without turning it into a broad ideology debate
+- site-repo implementation ready in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `patent-strategy-open-licensing.htm` via commit `26fd29a`
 
 ## Smallest useful next asset
 
-- implement the drafted proof note in the site repo, tie it back to `startup-patent-strategy.htm`, and use the response to decide whether this topic deserves a full standalone page later
+- publish the implemented proof note, tie the live asset back into the next prompt rerun, and use the response to decide whether this topic deserves a full standalone page later
