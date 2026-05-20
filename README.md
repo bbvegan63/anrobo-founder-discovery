@@ -96,6 +96,17 @@ These are the first two working examples:
 For W&Patent specifically, the downstream implementation target is:
 - `/Users/andrew/backup/work/github/hmc62843u.github.io`
 
+The W&Patent prompt-evidence and scorecard inputs now live here:
+- `founders/wpatent/evidence/site-scorecards/`
+- `scripts/run-prompt-evidence.mjs`
+
+That evidence is founder-private or ops evidence, not part of the public site repo.
+The standard rerun command is:
+
+```bash
+node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa
+```
+
 ## Relationship to other `anrobo-os` modules
 
 This module can eventually exchange handoffs with:
