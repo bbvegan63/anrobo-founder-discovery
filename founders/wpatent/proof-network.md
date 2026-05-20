@@ -23,7 +23,8 @@
 - job: answer the imported founder-list question practically without turning it into a broad ideology debate
 - publish check recorded in `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
 - post-publish Exa broad rerun recorded in `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
+- post-founder-authority Exa plus local OpenAI broad rerun recorded in `founders/wpatent/evidence/2026-05-20-broad-rerun-after-founder-authority-page.md`
 
 ## Smallest useful next asset
 
-- restore keyed Perplexity and OpenAI comparison access, rerun broad plus branded control prompts, then decide whether the new founder-authority page is enough or whether another proof asset is still needed
+- tighten direct answer blocks on the startup patent strategy and patent commercialization pages, then restore keyed Perplexity comparison access before deciding whether another proof asset is still needed

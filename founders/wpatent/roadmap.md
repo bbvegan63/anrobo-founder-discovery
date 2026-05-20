@@ -1,13 +1,13 @@
 # W&Patent Roadmap
 
 > **Date:** 2026-05-20
-> **Current bottleneck:** broad discovery is still zero on the fixed Exa pack, and the cross-provider compare is key-blocked
+> **Current bottleneck:** broad discovery is still zero after the founder-authority page on both Exa and the local OpenAI diagnostic loop, and the production compare is still Perplexity-blocked
 
 ## Priority Actions
 
-1. Strengthen direct `W&Patent's view` and `Andrew Leung's view` answer blocks on the most citable topic pages.
-2. Add one explicit founder-authority surface that ties Andrew Leung, W&Patent, startup patent strategy, and commercialization together in plain language.
-3. Restore `PERPLEXITY_API_KEY` and `OPENAI_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
+1. Strengthen direct `W&Patent's view` and `Andrew Leung's view` answer blocks on `startup-patent-strategy.htm` and `patent-commercialization-for-founders.htm`.
+2. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
+3. Treat the new local OpenAI OAuth lane as a secondary diagnostic compare, not a production benchmark, until the mixed dev batch is separated from the slower legacy providers.
 4. Keep building proof assets only after broad discovery starts to move, so new pages can be judged against a working retrieval baseline.
 5. Add more external founder proof and citation signals once the core named-entity surfaces are clearer, and log them in `external-signals.md`.
 
@@ -20,14 +20,15 @@
 - `2026-05-20`: local provider env moved out of the site repo and into `anrobo-founder-discovery/.env.local`
 - `2026-05-20`: Exa broad rerun completed from founder-discovery; result stayed `0/10` for `W&Patent` mention, `wpatent.com` citation, and `Andrew Leung` naming; see `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
 - `2026-05-20`: new founder-authority page implemented in `/Users/andrew/backup/work/github/hmc62843u.github.io` at `andrew-leung-startup-patent-strategy.htm`, linking Andrew Leung, W&Patent, startup patent strategy, and patent commercialization in one direct citation surface
-- current blocker: `PERPLEXITY_API_KEY` and `OPENAI_API_KEY` are empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: restore those keys, rerun the fixed prompt set with `--include-exa`, and compare whether the new founder-authority page moves broad or branded retrieval at all
+- `2026-05-20`: post-founder-authority Exa-only rerun stayed `0/10`, and the manual local OpenAI OAuth broad loop stayed `0/8` on structured answers; see `founders/wpatent/evidence/2026-05-20-broad-rerun-after-founder-authority-page.md`
+- current blocker: `PERPLEXITY_API_KEY` is still empty in `anrobo-founder-discovery/.env.local`
+- next evidence step: restore that key, rerun the production benchmark with `--include-exa`, and compare it against the current Exa plus local OAuth broad baseline
 
 ## Recheck
 
 - rerun the 10-prompt broad pack
-- rerun branded control prompts once the keyed compare is restored
-- compare whether the founder-authority page changes any `W&Patent`, `wpatent.com`, or `Andrew Leung` retrieval
+- rerun branded control prompts once the Perplexity compare is restored
+- compare whether tightened core answer blocks change any `W&Patent`, `wpatent.com`, or `Andrew Leung` retrieval
 
 ## Agent Note
 
