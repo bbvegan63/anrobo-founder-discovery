@@ -1,6 +1,26 @@
 {
   "version": 1,
-  "received_sync_ids": [],
-  "shared_assets": [],
+  "received_sync_ids": [
+    "asset-001--2026-05-19T00-00-00Z"
+  ],
+  "shared_assets": [
+    {
+      "sync_id": "asset-001--2026-05-19T00-00-00Z",
+      "founder_id": "wpatent",
+      "asset_id": "asset-001",
+      "asset_type": "case-note",
+      "title": "Why a startup patent strategy should protect leverage, not just generate filings",
+      "summary": "A strong startup patent strategy should protect business leverage, not just produce filings.",
+      "allowed_channels": [
+        "linkedin-founder-post",
+        "founder-list-intro-note"
+      ],
+      "source_refs": [
+        "https://wpatent.com/startup-patent-strategy-case-note.htm",
+        "https://wpatent.com/startup-patent-strategy.htm"
+      ],
+      "exported_at": "2026-05-19T00:00:00Z"
+    }
+  ],
   "feedback_events": []
 }

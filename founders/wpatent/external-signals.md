@@ -7,13 +7,20 @@
 
 | Signal ID | Asset | Channel | Visibility | Status | Response Status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| `extsig-001` | `asset-001` | LinkedIn founder post | Public | Sent / live | Pending | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder post was published. |
-| `extsig-002` | `asset-001` | founder list intro note | Private | Sent | Pending | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder-list send went out. |
+| `extsig-001` | `asset-001` | LinkedIn founder post | Public | Sent / live | Pending | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder post was published. Included in mixed-mode share packet `asset-001--2026-05-19T00-00-00Z`. |
+| `extsig-002` | `asset-001` | founder list intro note | Private | Sent | Pending | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder-list send went out. Included in mixed-mode share packet `asset-001--2026-05-19T00-00-00Z`. |
 
 ## Source Asset
 
 - onsite case note: `startup-patent-strategy-case-note.htm`
 - linked page: `startup-patent-strategy.htm`
+
+## Mixed-Mode Pilot
+
+- share packet: `sync/outbox/asset-001-share.json`
+- community sync id: `asset-001--2026-05-19T00-00-00Z`
+- shared workspace status: applied to `community/workspace.json`
+- feedback import status: not yet used; waiting for a real response worth importing
 
 ## Reading Rule
 
