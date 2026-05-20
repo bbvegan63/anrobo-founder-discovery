@@ -13,8 +13,13 @@
 - more applied examples around commercialization and founder authority
 - more external proof signals and citations beyond the site itself
 - stronger repeated proof blocks across multiple topic clusters
-- a clearer answer on how W&Patent thinks about patent strategy versus open, permissive, or anti-patent alternatives
+- a clearer answer on how W&Patent thinks about patent strategy versus open, permissive, or other non-patent alternatives
+
+## In-Progress Asset
+
+- `2026-05-20` proof-note brief drafted in `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
+- job: answer the imported founder-list question practically without turning it into a broad ideology debate
 
 ## Smallest useful next asset
 
-- one short founder-facing proof note that explains when a founder should favor patents, open licensing, or other non-patent defensibility strategies
+- implement the drafted proof note in the site repo, tie it back to `startup-patent-strategy.htm`, and use the response to decide whether this topic deserves a full standalone page later
