@@ -20,8 +20,9 @@
 
 - `2026-05-20` proof-note brief drafted in `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
 - job: answer the imported founder-list question practically without turning it into a broad ideology debate
-- publish check and rerun blocker recorded in `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
+- publish check recorded in `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
+- post-publish Exa broad rerun recorded in `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
 
 ## Smallest useful next asset
 
-- rerun prompt evidence from a keyed environment, then use the response to decide whether this topic deserves a full standalone page later
+- restore keyed Perplexity and OpenAI comparison access, rerun broad plus branded control prompts, then decide whether the next asset should be another proof note or a more direct founder-authority page
