@@ -109,3 +109,4 @@ Recreate the top-level orchestration files and session commands.
 
 This module is intentionally central and cross-founder.
 It should not assume that founder websites live inside the same repo.
+When site implementation is needed, use `playbooks/site-execution-handoff.md` to route the work into the correct founder website repo and then back here for evidence refresh.

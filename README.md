@@ -68,6 +68,16 @@ founders/<founder-id>/
 This module is the shared workspace.
 Founder websites or founder-owned repos can remain separate and act as downstream targets for site changes, publishing, or exports.
 
+## Cross-repo execution flow
+
+For substantial site work, the default rule is:
+
+`anrobo-founder-discovery` decides and guides.  
+The founder website repo builds and publishes.  
+Then `anrobo-founder-discovery` records the result and refreshes evidence.
+
+That means new pages, new proof assets, and roadmap-driven site changes should usually start here, move into the founder website repo for implementation, and then return here for scorecard and roadmap refreshes.
+
 ## Starter founder profiles
 
 - `founders/wpatent/`
@@ -76,6 +86,9 @@ Founder websites or founder-owned repos can remain separate and act as downstrea
 These are the first two working examples:
 - W&Patent as the primary case
 - OpenFor as a comparison control
+
+For W&Patent specifically, the downstream implementation target is:
+- `/Users/andrew/backup/work/github/hmc62843u.github.io`
 
 ## Relationship to other `anrobo-os` modules
 

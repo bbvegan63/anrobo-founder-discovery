@@ -1,6 +1,7 @@
 # /improvement-roadmap
 
 Read `agents/scorecards.md`, `agents/proof-network.md`, and `playbooks/roadmap-refresh.md` first.
+If the next move is a page or site change, also read `playbooks/site-execution-handoff.md`.
 
 Gather one question at a time:
 1. founder profile
@@ -9,4 +10,3 @@ Gather one question at a time:
 
 Produce:
 - `founders/<founder-id>/roadmap.md`
-
