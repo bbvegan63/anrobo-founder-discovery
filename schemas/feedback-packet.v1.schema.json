@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-feedback-packet.v1.schema.json",
+  "title": "Feedback Packet",
+  "type": "object",
+  "required": [
+    "feedback_id",
+    "founder_id",
+    "asset_id",
+    "source_sync_id",
+    "feedback_type",
+    "signal_strength",
+    "notes",
+    "imported_at"
+  ],
+  "properties": {
+    "feedback_id": { "type": "string" },
+    "founder_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "source_sync_id": { "type": "string" },
+    "feedback_type": { "type": "string" },
+    "signal_strength": { "type": "string" },
+    "notes": { "type": "string" },
+    "imported_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

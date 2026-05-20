@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-share-packet.v1.schema.json",
+  "title": "Share Packet",
+  "type": "object",
+  "required": [
+    "sync_id",
+    "founder_id",
+    "asset_id",
+    "asset_type",
+    "title",
+    "summary",
+    "allowed_channels",
+    "source_refs",
+    "exported_at"
+  ],
+  "properties": {
+    "sync_id": { "type": "string" },
+    "founder_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "asset_type": { "type": "string" },
+    "title": { "type": "string" },
+    "summary": { "type": "string" },
+    "allowed_channels": { "type": "array", "items": { "type": "string" } },
+    "source_refs": { "type": "array", "items": { "type": "string" } },
+    "exported_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}
