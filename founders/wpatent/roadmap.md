@@ -36,3 +36,4 @@
 For the current evidence-led execution order, read:
 
 - `founders/wpatent/evidence/2026-05-19-next-moves.md`
+- `founders/wpatent/evidence/2026-05-20-next-agent-session-recommendation.md`
