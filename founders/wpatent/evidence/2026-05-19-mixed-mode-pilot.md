@@ -28,8 +28,13 @@ The approved `asset-001` case note was exported into the new mixed-mode sync out
 
 - outward sync: complete
 - shared asset present in community layer: yes
-- feedback imported back inward: no
+- feedback imported back inward: yes, first selected founder-list question imported into `evidence/imported-feedback/feedback-asset-001-founder-list-question.json`
+
+## First Response Signals
+
+- LinkedIn founder post: `2` likes, no comments
+- founder list: one counter-question about anti-patent or open-license strategies such as Creative Commons, Apache, and GPL
 
 ## Next Mixed-Mode Step
 
-Wait for one real response signal that is worth preserving, then create a feedback packet and import it into `founders/wpatent/evidence/imported-feedback/`.
+Import the founder-list question into `founders/wpatent/evidence/imported-feedback/`, then decide whether W&Patent needs a proof note or comparison page on patent strategy versus open, defensive, or anti-patent alternatives.

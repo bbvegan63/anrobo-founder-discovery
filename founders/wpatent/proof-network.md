@@ -13,7 +13,8 @@
 - more applied examples around commercialization and founder authority
 - more external proof signals and citations beyond the site itself
 - stronger repeated proof blocks across multiple topic clusters
+- a clearer answer on how W&Patent thinks about patent strategy versus open, permissive, or anti-patent alternatives
 
 ## Smallest useful next asset
 
-- one short founder-facing proof note that supports the next priority topic cluster
+- one short founder-facing proof note that explains when a founder should favor patents, open licensing, or other non-patent defensibility strategies
