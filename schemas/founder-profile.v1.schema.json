@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-founder-profile.v1.schema.json",
+  "title": "Founder Profile",
+  "type": "object",
+  "required": ["founder", "domain", "topics", "business_goal"],
+  "properties": {
+    "founder": { "type": "string" },
+    "domain": { "type": "string" },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "business_goal": { "type": "string" },
+    "known_strengths": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "known_weaknesses": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
+

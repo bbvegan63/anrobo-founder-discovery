@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-scorecard-summary.v1.schema.json",
+  "title": "Founder Scorecard Summary",
+  "type": "object",
+  "required": ["founder", "date", "categories"],
+  "properties": {
+    "founder": { "type": "string" },
+    "date": { "type": "string" },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "weight", "score", "read"],
+        "properties": {
+          "name": { "type": "string" },
+          "weight": { "type": "number" },
+          "score": { "type": "number" },
+          "read": { "type": "string" }
+        }
+      }
+    },
+    "headline_signals": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
+

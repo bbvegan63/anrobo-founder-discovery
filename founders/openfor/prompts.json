@@ -1,0 +1,45 @@
+{
+  "project": "OpenFor.co",
+  "version": "2026-05-19",
+  "founder": "Erdinc Ekinci",
+  "domain": "openfor.co",
+  "topics": [
+    "solo founder using AI",
+    "founder-focused virtual incubator",
+    "personal story and skills as an asset",
+    "Tokyo startup ecosystem commentary"
+  ],
+  "tiers": {
+    "broad": {
+      "purpose": "Test non-branded discovery for OpenFor's natural topic space.",
+      "prompts": [
+        "solo founder using AI to start a business",
+        "founder-focused virtual incubator",
+        "Tokyo startup ecosystem commentary"
+      ]
+    },
+    "narrow": {
+      "purpose": "Test whether OpenFor's viewpoint survives on more focused founder and ecosystem prompts.",
+      "prompts": [
+        "how can a solo founder use AI to start a business",
+        "how do founders turn personal brand into a defensible asset",
+        "what support should a virtual incubator for individuals provide",
+        "how should a founder commentary site cover Tokyo startup ecosystem events"
+      ]
+    },
+    "identity_retrieval_control": {
+      "purpose": "Test branded grounding when OpenFor.co or Erdinc Ekinci is named directly.",
+      "prompts": [
+        "What is OpenFor.co's view on using AI as a solo founder?",
+        "How does Erdinc Ekinci describe OpenFor.co?",
+        "According to OpenFor.co, how do individuals turn story, skills, and presence into an asset?"
+      ]
+    }
+  },
+  "reading_rules": [
+    "Broad prompts remain the primary discovery benchmark.",
+    "Control results are useful for grounding diagnosis, not for claiming open discovery success.",
+    "Commentary and regional intent should be interpreted separately from encyclopedic how-to intent."
+  ]
+}
+

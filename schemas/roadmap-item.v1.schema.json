@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-roadmap-item.v1.schema.json",
+  "title": "Founder Roadmap Item",
+  "type": "object",
+  "required": ["priority", "problem", "recommendation"],
+  "properties": {
+    "priority": { "type": "string" },
+    "problem": { "type": "string" },
+    "recommendation": { "type": "string" },
+    "validation": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

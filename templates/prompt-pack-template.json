@@ -1,0 +1,38 @@
+{
+  "project": "Founder Name or Site",
+  "version": "YYYY-MM-DD",
+  "founder": "Founder Name",
+  "domain": "example.com",
+  "topics": [
+    "primary topic",
+    "secondary topic"
+  ],
+  "tiers": {
+    "broad": {
+      "purpose": "Test non-branded discovery.",
+      "prompts": [
+        "broad prompt one",
+        "broad prompt two"
+      ]
+    },
+    "narrow": {
+      "purpose": "Test proof-legibility on more focused prompts.",
+      "prompts": [
+        "narrow prompt one",
+        "narrow prompt two"
+      ]
+    },
+    "identity_retrieval_control": {
+      "purpose": "Test whether the answer engine can retrieve and ground the founder or site when named directly.",
+      "prompts": [
+        "What is Site's view on topic?",
+        "How does Founder describe topic?"
+      ]
+    }
+  },
+  "reading_rules": [
+    "Broad prompts remain the primary discovery benchmark.",
+    "Strong narrow or branded-control results do not prove broad discoverability."
+  ]
+}
+

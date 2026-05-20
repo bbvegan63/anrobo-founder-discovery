@@ -1,0 +1,49 @@
+{
+  "project": "W&Patent",
+  "version": "2026-05-19",
+  "founder": "Andrew Leung",
+  "domain": "wpatent.com",
+  "topics": [
+    "startup patent strategy",
+    "patent commercialization for founders",
+    "founder-led authority building",
+    "AI-readable company websites",
+    "Trust Chain methodology"
+  ],
+  "tiers": {
+    "broad": {
+      "purpose": "Test non-branded discovery for W&Patent's main topic spaces.",
+      "prompts": [
+        "patent strategy for startups",
+        "startup defensibility through patents",
+        "patent commercialization for founders",
+        "founder-led authority building",
+        "AI-readable company website"
+      ]
+    },
+    "narrow": {
+      "purpose": "Test proof-legibility for the startup patent strategy cluster.",
+      "prompts": [
+        "what should a startup patent strategy protect first",
+        "how should founders decide what is worth patenting first",
+        "what creates leverage in startup patent strategy",
+        "should startups patent visible product features or underlying workflow",
+        "how do patents improve bargaining position for startups"
+      ]
+    },
+    "identity_retrieval_control": {
+      "purpose": "Test branded grounding when W&Patent or Andrew Leung is named directly.",
+      "prompts": [
+        "What is W&Patent's view on startup patent strategy?",
+        "How does Andrew Leung think founders should decide what to patent first?",
+        "According to W&Patent, should startups protect visible features or underlying workflow first?"
+      ]
+    }
+  },
+  "reading_rules": [
+    "Broad prompts remain the primary discovery benchmark.",
+    "Strong narrow results show legibility, not broad discoverability.",
+    "Branded control prompts test grounding, not open-market discovery."
+  ]
+}
+

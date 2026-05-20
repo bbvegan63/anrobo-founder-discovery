@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-prompt-pack.v1.schema.json",
+  "title": "Founder Prompt Pack",
+  "type": "object",
+  "required": ["project", "version", "founder", "domain", "tiers"],
+  "properties": {
+    "project": { "type": "string" },
+    "version": { "type": "string" },
+    "founder": { "type": "string" },
+    "domain": { "type": "string" },
+    "topics": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "tiers": {
+      "type": "object",
+      "required": ["broad", "narrow", "identity_retrieval_control"],
+      "properties": {
+        "broad": { "$ref": "#/$defs/tier" },
+        "narrow": { "$ref": "#/$defs/tier" },
+        "identity_retrieval_control": { "$ref": "#/$defs/tier" }
+      }
+    },
+    "reading_rules": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "tier": {
+      "type": "object",
+      "required": ["purpose", "prompts"],
+      "properties": {
+        "purpose": { "type": "string" },
+        "prompts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}
+
