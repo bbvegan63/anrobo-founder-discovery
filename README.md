@@ -1,6 +1,6 @@
 # Anrobo Founder Discovery
 
-A shared operating system for assessing and improving founder-led discovery across AI search, answer engines, founder authority surfaces, and supporting proof networks.
+A shared operating system for assessing and improving founder-led discovery across AI search, answer engines, founder authority surfaces, supporting proof networks, and mixed-mode circulation between private founder state and shared incubator state.
 
 This module is designed for incubator operators and founders who need a repeatable way to:
 
@@ -44,7 +44,10 @@ anrobo-founder-discovery/
 ├── SETUP.md
 ├── .claude/commands/
 ├── agents/
+├── community/
 ├── playbooks/
+├── scripts/
+├── sync/
 ├── templates/
 ├── schemas/
 ├── founders/
@@ -69,6 +72,7 @@ founders/<founder-id>/
 
 This module is the shared workspace.
 Founder websites or founder-owned repos can remain separate and act as downstream targets for site changes, publishing, or exports.
+Approved founder assets can also circulate into a shared incubator layer without replacing the private founder folders as the system of record.
 
 ## Cross-repo execution flow
 

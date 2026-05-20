@@ -19,3 +19,4 @@
 
 These entries track the external layer around `asset-001`, not the onsite source asset itself.
 Follow-up replies, intros, reposts, or later evidence changes should be appended here or reflected in the next structured evidence refresh.
+Selected shared-layer feedback can also be imported into `evidence/imported-feedback/` when mixed-mode sync is used.

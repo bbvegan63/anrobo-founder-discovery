@@ -2,7 +2,7 @@
 
 ## What this folder is
 
-This is the Anrobo Founder Discovery workspace — a central shared module for founder intake, discovery audits, prompt packs, scorecards, comparison controls, proof networks, and founder publishing loops.
+This is the Anrobo Founder Discovery workspace — a central shared module for founder intake, discovery audits, prompt packs, scorecards, comparison controls, proof networks, founder publishing loops, and mixed-mode sync between private founder state and shared incubator circulation.
 It also supports external-signal tracking for offsite distribution and response loops.
 
 It is meant to be reused across multiple founder-led sites, not tied to a single domain.
@@ -39,9 +39,13 @@ anrobo-founder-discovery/
 │   ├── proof-network-review.md         ← /proof-network-review
 │   ├── comparison-control.md           ← /comparison-control
 │   ├── publishing-loop.md              ← /publishing-loop
-│   └── external-signal-loop.md         ← /external-signal-loop
+│   ├── external-signal-loop.md         ← /external-signal-loop
+│   └── mixed-mode-sync.md              ← /mixed-mode-sync
 ├── agents/                             ← Core operating knowledge (BACKUP THIS)
+├── community/                          ← Shared approved assets and feedback layer
 ├── playbooks/                          ← Repeatable workflows (BACKUP THIS)
+├── scripts/                            ← Local CLI helpers for sync and validation
+├── sync/                               ← Packet transport layer for mixed mode
 ├── templates/                          ← Reusable founder and comparison templates (BACKUP THIS)
 ├── schemas/                            ← JSON schema reference copies (BACKUP THIS)
 ├── founders/                           ← Per-founder working state
@@ -86,6 +90,7 @@ Recreate the top-level orchestration files and session commands.
 - use one-question-at-a-time interview flows
 - define the agent roster, playbook roster, founder folder contract, output conventions, and handoff protocol
 - include external-signal tracking as part of founder state and publishing follow-through
+- include mixed-mode sync as the shared circulation layer for approved assets and selected feedback
 - reference `Founder-Led Discovery Spine` and `Measure -> Distill -> Assert -> Publish -> Learn`
 
 **`README.md`** should:
