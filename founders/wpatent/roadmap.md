@@ -15,7 +15,9 @@
 
 - `2026-05-20`: draft proof-note brief saved to `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
 - `2026-05-20`: site-repo implementation committed in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `26fd29a`, adding `patent-strategy-open-licensing.htm` and linking it back to `startup-patent-strategy.htm`
-- next publish step: push or publish the site-repo change, then rerun broad prompts and branded control prompts
+- `2026-05-20`: live page verified at `https://wpatent.com/patent-strategy-open-licensing.htm`; publish check saved to `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
+- current blocker: post-publish prompt rerun is pending provider keys in the site-repo environment
+- next evidence step: rerun the fixed prompt set with working provider keys, then refresh scorecard and roadmap read
 
 ## Recheck
 

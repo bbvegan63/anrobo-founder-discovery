@@ -5,6 +5,7 @@
 - topic pages for startup patent strategy and patent commercialization
 - Trust Chain methodology and explainer pages
 - startup patent strategy case note
+- patent strategy versus openness proof note at `https://wpatent.com/patent-strategy-open-licensing.htm`
 - founder posts and routing drafts connected to asset-001
 - migrated external signal baseline for `asset-001` in `external-signals.md`
 
@@ -19,8 +20,8 @@
 
 - `2026-05-20` proof-note brief drafted in `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
 - job: answer the imported founder-list question practically without turning it into a broad ideology debate
-- site-repo implementation ready in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `patent-strategy-open-licensing.htm` via commit `26fd29a`
+- publish check and rerun blocker recorded in `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
 
 ## Smallest useful next asset
 
-- publish the implemented proof note, tie the live asset back into the next prompt rerun, and use the response to decide whether this topic deserves a full standalone page later
+- rerun prompt evidence from a keyed environment, then use the response to decide whether this topic deserves a full standalone page later
