@@ -3,6 +3,7 @@
 ## Current proof
 
 - topic pages for startup patent strategy and patent commercialization
+- tightened direct-answer blocks on the two core topic pages for startup patent strategy and patent commercialization
 - founder-signature page at `https://wpatent.com/andrew-leung-startup-patent-strategy.htm`
 - Trust Chain methodology and explainer pages
 - startup patent strategy case note
@@ -24,7 +25,8 @@
 - publish check recorded in `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
 - post-publish Exa broad rerun recorded in `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
 - post-founder-authority Exa plus local OpenAI broad rerun recorded in `founders/wpatent/evidence/2026-05-20-broad-rerun-after-founder-authority-page.md`
+- core answer-block tightening recorded in `founders/wpatent/evidence/2026-05-20-core-answer-block-tightening.md`
 
 ## Smallest useful next asset
 
-- tighten direct answer blocks on the startup patent strategy and patent commercialization pages, then restore keyed Perplexity comparison access before deciding whether another proof asset is still needed
+- rerun the broad benchmark after the tightened core pages have had time to propagate, then decide whether another proof asset is still needed or whether the next move should shift to external founder proof
