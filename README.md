@@ -95,3 +95,16 @@ The default pattern is:
 
 Start with [SETUP.md](./SETUP.md).
 
+Minimal local setup:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+cp .env.example .env
+```
+
+Current expected env keys:
+
+- `EXA_API_KEY`
+- `PERPLEXITY_API_KEY`
+- `OPENAI_API_KEY`

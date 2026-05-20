@@ -6,6 +6,21 @@ This is the Anrobo Founder Discovery workspace — a central shared module for f
 
 It is meant to be reused across multiple founder-led sites, not tied to a single domain.
 
+## Quick start
+
+```bash
+cd anrobo-founder-discovery
+python3 -m venv .venv
+source .venv/bin/activate
+cp .env.example .env
+```
+
+Expected local env keys:
+
+- `EXA_API_KEY`
+- `PERPLEXITY_API_KEY`
+- `OPENAI_API_KEY`
+
 ## Folder structure
 
 ```text
@@ -14,6 +29,7 @@ anrobo-founder-discovery/
 ├── SETUP.md                            ← This file
 ├── README.md                           ← User-facing overview
 ├── .gitignore
+├── .env.example                        ← Local env template
 ├── .claude/commands/
 │   ├── founder-intake.md               ← /founder-intake
 │   ├── discovery-audit.md              ← /discovery-audit
@@ -93,4 +109,3 @@ Recreate the top-level orchestration files and session commands.
 
 This module is intentionally central and cross-founder.
 It should not assume that founder websites live inside the same repo.
-
