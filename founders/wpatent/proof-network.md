@@ -3,6 +3,7 @@
 ## Current proof
 
 - topic pages for startup patent strategy and patent commercialization
+- founder-signature page at `https://wpatent.com/andrew-leung-startup-patent-strategy.htm`
 - Trust Chain methodology and explainer pages
 - startup patent strategy case note
 - patent strategy versus openness proof note at `https://wpatent.com/patent-strategy-open-licensing.htm`
@@ -25,4 +26,4 @@
 
 ## Smallest useful next asset
 
-- restore keyed Perplexity and OpenAI comparison access, rerun broad plus branded control prompts, then decide whether the next asset should be another proof note or a more direct founder-authority page
+- restore keyed Perplexity and OpenAI comparison access, rerun broad plus branded control prompts, then decide whether the new founder-authority page is enough or whether another proof asset is still needed

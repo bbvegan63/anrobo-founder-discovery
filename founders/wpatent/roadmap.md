@@ -19,14 +19,15 @@
 - `2026-05-20`: boundary cleanup completed; site repo pushed as `8463e78`, and discovery ops absorbed into founder-discovery at `598328a`
 - `2026-05-20`: local provider env moved out of the site repo and into `anrobo-founder-discovery/.env.local`
 - `2026-05-20`: Exa broad rerun completed from founder-discovery; result stayed `0/10` for `W&Patent` mention, `wpatent.com` citation, and `Andrew Leung` naming; see `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
+- `2026-05-20`: new founder-authority page implemented in `/Users/andrew/backup/work/github/hmc62843u.github.io` at `andrew-leung-startup-patent-strategy.htm`, linking Andrew Leung, W&Patent, startup patent strategy, and patent commercialization in one direct citation surface
 - current blocker: `PERPLEXITY_API_KEY` and `OPENAI_API_KEY` are empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: restore those keys, rerun the fixed prompt set with `--include-exa`, and compare whether broad or branded retrieval moved at all
+- next evidence step: restore those keys, rerun the fixed prompt set with `--include-exa`, and compare whether the new founder-authority page moves broad or branded retrieval at all
 
 ## Recheck
 
 - rerun the 10-prompt broad pack
 - rerun branded control prompts once the keyed compare is restored
-- compare whether the defensibility proof note changes any `W&Patent`, `wpatent.com`, or `Andrew Leung` retrieval
+- compare whether the founder-authority page changes any `W&Patent`, `wpatent.com`, or `Andrew Leung` retrieval
 
 ## Agent Note
 
