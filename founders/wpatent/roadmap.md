@@ -16,3 +16,9 @@
 - rerun broad prompts
 - rerun branded control prompts
 - compare whether grounding shifts from generic synthesis toward W&Patent pages
+
+## Agent Note
+
+For the current evidence-led execution order, read:
+
+- `founders/wpatent/evidence/2026-05-19-next-moves.md`
