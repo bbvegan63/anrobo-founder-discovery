@@ -1,0 +1,36 @@
+{
+  "version": "2026-05-19",
+  "founder_id": "wpatent",
+  "records": [
+    {
+      "id": "extsig-001",
+      "asset_id": "asset-001",
+      "source_distribution_id": "dist-002",
+      "source_workspace": "legacy-wpatent-proof-flow",
+      "channel": "linkedin-founder-post",
+      "signal_type": "distribution",
+      "visibility": "public",
+      "status": "sent",
+      "published_at": "2026-05-19",
+      "recorded_at": "2026-05-19",
+      "source_url": "https://wpatent.com/startup-patent-strategy-case-note.htm",
+      "notes": "Migrated from the older W&Patent proof-flow workspace after manual confirmation that the LinkedIn founder post was published.",
+      "response_status": "pending"
+    },
+    {
+      "id": "extsig-002",
+      "asset_id": "asset-001",
+      "source_distribution_id": "dist-003",
+      "source_workspace": "legacy-wpatent-proof-flow",
+      "channel": "founder-list-intro-note",
+      "signal_type": "distribution",
+      "visibility": "private",
+      "status": "sent",
+      "published_at": "2026-05-19",
+      "recorded_at": "2026-05-19",
+      "source_url": "https://wpatent.com/startup-patent-strategy.htm",
+      "notes": "Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder-list intro note was sent.",
+      "response_status": "pending"
+    }
+  ]
+}

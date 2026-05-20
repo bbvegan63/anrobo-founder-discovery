@@ -8,5 +8,5 @@ Use the sequence:
 2. Distill one clear lesson.
 3. Assert the founder's point of view.
 4. Publish the idea as a post, note, or proof asset.
-5. Learn from response signals and feed them back into the next score refresh.
-
+5. Log the offsite distribution or response in the external-signal tracker when the asset actually goes out.
+6. Learn from response signals and feed them back into the next score refresh.

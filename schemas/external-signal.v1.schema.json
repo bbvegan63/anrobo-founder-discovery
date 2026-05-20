@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "anrobo-external-signal.v1.schema.json",
+  "title": "External Signal Log",
+  "type": "object",
+  "required": ["version", "founder_id", "records"],
+  "properties": {
+    "version": { "type": "string" },
+    "founder_id": { "type": "string" },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "channel",
+          "signal_type",
+          "visibility",
+          "status",
+          "recorded_at"
+        ],
+        "properties": {
+          "id": { "type": "string" },
+          "asset_id": { "type": "string" },
+          "source_distribution_id": { "type": "string" },
+          "source_workspace": { "type": "string" },
+          "channel": { "type": "string" },
+          "signal_type": { "type": "string" },
+          "visibility": { "type": "string" },
+          "status": { "type": "string" },
+          "published_at": { "type": "string" },
+          "recorded_at": { "type": "string" },
+          "source_url": { "type": "string" },
+          "notes": { "type": "string" },
+          "response_status": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

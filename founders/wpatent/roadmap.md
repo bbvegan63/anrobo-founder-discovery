@@ -8,11 +8,10 @@
 1. Strengthen direct `W&Patent's view` and `Andrew Leung's view` answer blocks on the most citable topic pages.
 2. Keep building proof assets that support the strongest topic pages, especially startup patent strategy.
 3. Rerun broad, narrow, and branded control prompts after each meaningful publish cycle.
-4. Add more external founder proof and citation signals once the core pages and proof assets are stable.
+4. Add more external founder proof and citation signals once the core pages and proof assets are stable, and log them in `external-signals.md`.
 
 ## Recheck
 
 - rerun broad prompts
 - rerun branded control prompts
 - compare whether grounding shifts from generic synthesis toward W&Patent pages
-

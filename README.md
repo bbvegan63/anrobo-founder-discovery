@@ -8,6 +8,7 @@ This module is designed for incubator operators and founders who need a repeatab
 - compare founder sites against controls
 - refresh scorecards and improvement roadmaps
 - identify proof gaps
+- track external distribution and response signals
 - turn internal evidence into public founder-facing outputs
 
 ## Why it exists
@@ -62,6 +63,7 @@ founders/<founder-id>/
   scorecard.md
   roadmap.md
   proof-network.md
+  external-signals.md
   evidence/
 ```
 

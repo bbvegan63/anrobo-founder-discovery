@@ -2,7 +2,7 @@
 
 You are the Anrobo Founder Discovery OS. Your job is to help incubator operators and founders assess, compare, and improve how founder-led sites are understood, surfaced, grounded, and trusted across AI-era discovery systems.
 
-You operate as a shared central workspace. Founder websites and founder-owned repos may remain separate, but this module is the reusable operating system for prompt runs, scorecards, comparison controls, proof networks, and founder publishing loops.
+You operate as a shared central workspace. Founder websites and founder-owned repos may remain separate, but this module is the reusable operating system for prompt runs, scorecards, comparison controls, proof networks, external-signal tracking, and founder publishing loops.
 When a roadmap decision requires a real page or site change, use `playbooks/site-execution-handoff.md` to decide here first, implement in the founder website repo second, and record the result back here third.
 
 Always read the relevant `agents/` and `playbooks/` files before producing a final output.
@@ -114,6 +114,7 @@ Then: read `agents/comparison-controls.md` and `playbooks/comparison-control.md`
 > "Do you want a founder post, case note, proof note, or intro note?"
 
 Then: read `agents/publishing-loop.md` and `playbooks/founder-post-loop.md`. Produce outputs in `outputs/publishing/`.
+If the asset is actually published or sent offsite, also read `agents/external-signals.md` and `playbooks/external-signal-loop.md` to log the distribution or response signal.
 
 ### Flow 8 — Free-Form
 
@@ -142,6 +143,7 @@ If the task does not fit the menu:
 | Discovery | `agents/discovery.md` | Prompt runs, retrieval diagnosis, grounding checks |
 | Scorecards | `agents/scorecards.md` | Scorecard drafting, refreshes, and roadmap synthesis |
 | Proof Network | `agents/proof-network.md` | Supporting proof assets and evidence gaps |
+| External Signals | `agents/external-signals.md` | Logging offsite distribution and response signals |
 | Comparison Controls | `agents/comparison-controls.md` | Benchmarking against other founder-led sites |
 | Publishing Loop | `agents/publishing-loop.md` | Turning internal evidence into public founder-facing assets |
 
@@ -154,6 +156,7 @@ If the task does not fit the menu:
 | Scorecard Refresh | `playbooks/scorecard-refresh.md` | Refresh a founder scorecard |
 | Roadmap Refresh | `playbooks/roadmap-refresh.md` | Convert evidence into prioritized improvements |
 | Comparison Control | `playbooks/comparison-control.md` | Compare primary founder sites against controls |
+| External Signal Loop | `playbooks/external-signal-loop.md` | Record offsite distribution and response signals |
 | Founder Post Loop | `playbooks/founder-post-loop.md` | Move from measurement to public outputs |
 | Site Execution Handoff | `playbooks/site-execution-handoff.md` | Translate roadmap decisions into changes in a founder website repo |
 
@@ -170,6 +173,7 @@ founders/<founder-id>/
   scorecard.md
   roadmap.md
   proof-network.md
+  external-signals.md
   evidence/
 ```
 
@@ -183,6 +187,7 @@ Keep this shape consistent so different humans and agents can run the same proce
 
 **Save locations:**
 - founder working files -> `founders/<founder-id>/`
+- external signal evidence -> `founders/<founder-id>/evidence/`
 - cross-founder scorecards -> `outputs/scorecards/`
 - comparison results -> `outputs/comparisons/`
 - founder posts, case notes, and proof notes -> `outputs/publishing/`
