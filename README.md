@@ -107,6 +107,12 @@ The standard rerun command is:
 node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa
 ```
 
+For a development comparison run that includes the local OAuth-backed OpenAI path:
+
+```bash
+node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --include-exa --include-dev
+```
+
 ## Relationship to other `anrobo-os` modules
 
 This module can eventually exchange handoffs with:

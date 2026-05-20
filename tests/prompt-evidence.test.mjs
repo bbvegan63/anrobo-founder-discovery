@@ -58,6 +58,7 @@ test("prompt evidence README documents the founder-discovery ownership boundary"
   assert.match(readme, /prompt-runs\.csv/i);
   assert.match(readme, /append/i);
   assert.match(readme, /--env-file=.env\.local/i);
+  assert.match(readme, /openai_local_oauth/i);
 });
 
 test("founder-discovery env template lists the prompt-evidence provider keys", () => {
@@ -71,6 +72,66 @@ test("founder-discovery env template lists the prompt-evidence provider keys", (
   assert.match(example, /OPENAI_API_KEY=/);
   assert.match(rootReadme, /founders\/wpatent\/evidence\/site-scorecards/i);
   assert.match(rootReadme, /run-prompt-evidence\.mjs/i);
+  assert.match(rootReadme, /--include-dev/i);
+});
+
+test("local OpenAI OAuth helper resolves explicit and Volta Codex launches", () => {
+  assert.equal(
+    existsSync(new URL("../scripts/lib/openai-local-oauth.js", import.meta.url)),
+    true
+  );
+
+  const {
+    buildCodexExecArgs,
+    buildStructuredPrompt,
+    findVoltaCodexLaunch,
+    resolveCodexLaunch
+  } = require("../scripts/lib/openai-local-oauth.js");
+
+  const explicitLaunch = resolveCodexLaunch({
+    OPENAI_LOCAL_CODEX_JS: "/tmp/codex.js",
+    OPENAI_LOCAL_NODE_BIN: "/tmp/node"
+  });
+
+  assert.deepEqual(explicitLaunch, {
+    command: "/tmp/node",
+    baseArgs: ["/tmp/codex.js"]
+  });
+
+  const voltaLaunch = findVoltaCodexLaunch({
+    homeDir: "/Users/tester",
+    exists: (value) =>
+      value === "/Users/tester/.volta/tools/image/node/25.6.1/bin/node" ||
+      value ===
+        "/Users/tester/.volta/tools/image/node/25.6.1/lib/node_modules/@openai/codex/bin/codex.js",
+    readdir: () => [{ name: "25.6.1", isDirectory: () => true }]
+  });
+
+  assert.deepEqual(voltaLaunch, {
+    command: "/Users/tester/.volta/tools/image/node/25.6.1/bin/node",
+    baseArgs: [
+      "/Users/tester/.volta/tools/image/node/25.6.1/lib/node_modules/@openai/codex/bin/codex.js"
+    ]
+  });
+
+  assert.match(buildStructuredPrompt("startup patent strategy"), /citation_urls/i);
+  assert.match(buildStructuredPrompt("startup patent strategy"), /startup patent strategy/i);
+
+  const execArgs = buildCodexExecArgs({
+    baseArgs: ["/tmp/codex.js"],
+    prompt: "startup patent strategy",
+    schemaPath: "/tmp/schema.json",
+    outputPath: "/tmp/output.json",
+    scratchDir: "/tmp"
+  });
+
+  assert.deepEqual(execArgs.slice(0, 5), [
+    "/tmp/codex.js",
+    "exec",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "--output-schema"
+  ]);
 });
 
 test("normalization helpers identify W&Patent and Andrew signals", () => {
@@ -144,7 +205,8 @@ test("runner script uses founder-discovery evidence paths and required APIs", ()
     "api.openai.com",
     "api.exa.ai",
     "appendFileSync",
-    "buildRow"
+    "buildRow",
+    "openai_local_oauth"
   ]) {
     assert.match(runner, new RegExp(fragment.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
   }
@@ -160,6 +222,7 @@ test("runner defaults to perplexity only and supports dev providers", () => {
   assert.match(runner, /perplexity/);
   assert.match(runner, /exa_answer/);
   assert.match(runner, /openai_web_search/);
+  assert.match(runner, /openai_local_oauth/);
   assert.match(runner, /opencode_dev/);
   assert.match(runner, /kilocode_dev/);
 });

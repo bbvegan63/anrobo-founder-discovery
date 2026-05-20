@@ -27,8 +27,8 @@ This provider will:
 - run only when `--include-dev` is enabled
 - use a locally authenticated Codex CLI path instead of `OPENAI_API_KEY`
 - request structured JSON output so the runner can still append normalized CSV rows
-- use web search in the local Codex run so it behaves like an external-answer comparison instead of a repo-reading helper
-- keep citations as model-reported URLs, not as first-party API annotations
+- keep citations as model-reported URLs when present, not as first-party API annotations
+- behave as a diagnostic local-provider run rather than a production web-search benchmark
 
 This provider will not replace `openai_web_search`.
 
@@ -65,13 +65,15 @@ This is intentionally resilient to a broken shell shim.
 1. create a temporary JSON Schema file
 2. create a temporary output file
 3. run `codex exec`
-4. enable web search
-5. run outside the founder repo as agent context by setting Codex `--cd /tmp`
+4. close stdin explicitly so Codex does not wait for extra prompt input from the parent Node process
+5. run from founder-discovery like the other dev providers
 6. ask Codex to return JSON with:
    - `answer_text`
    - `citation_urls`
 7. parse the JSON file back into the prompt-evidence row format
 8. clean up temporary files
+
+During implementation we observed that forcing Codex search inside this structured-output path was unstable on this machine, while the plain local OAuth diagnostic path was stable. The provider should therefore remain clearly marked as a dev comparison source rather than external discovery evidence.
 
 ## Failure behavior
 

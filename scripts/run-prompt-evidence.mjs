@@ -1,12 +1,15 @@
 import { execFile } from "node:child_process";
-import { appendFileSync, existsSync, readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
+import openaiLocalOauth from "./lib/openai-local-oauth.js";
 import promptEvidence from "./lib/prompt-evidence.js";
 
 const execFileAsync = promisify(execFile);
 const { buildRow, csvEscape } = promptEvidence;
+const { buildCodexExecArgs, resolveCodexLaunch } = openaiLocalOauth;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -14,6 +17,7 @@ const repoRoot = path.resolve(__dirname, "..");
 const promptEvidenceRoot = path.join(repoRoot, "founders/wpatent/evidence/site-scorecards");
 const promptPath = path.join(promptEvidenceRoot, "prompts.txt");
 const csvPath = path.join(promptEvidenceRoot, "2026-05-08-wpatent-prompt-runs.csv");
+const openaiLocalOauthTimeoutMs = 60 * 1000;
 const csvHeader =
   "timestamp,system,prompt,answer_summary,wpatent_mentioned,wpatent_cited,cited_page,andrew_named,andrew_role_correct,positioning_aligned,citation_urls,notes\n";
 
@@ -28,6 +32,10 @@ function requireEnv(name) {
 function optionalEnv(name) {
   const value = process.env[name];
   return value ? value : "";
+}
+
+function shellQuote(value) {
+  return `'${String(value).replace(/'/g, `'\\''`)}'`;
 }
 
 function parseArgs(argv) {
@@ -111,6 +119,70 @@ async function runOpenAI(prompt, apiKey) {
     citations,
     notes: "openai comparison run"
   };
+}
+
+async function runOpenAILocalOAuth(prompt) {
+  const launch = resolveCodexLaunch(process.env);
+  const tempDir = mkdtempSync(path.join(os.tmpdir(), "openai-local-oauth-"));
+  const schemaPath = path.join(tempDir, "schema.json");
+  const outputPath = path.join(tempDir, "output.json");
+  const stdoutPath = path.join(tempDir, "stdout.log");
+  const stderrPath = path.join(tempDir, "stderr.log");
+
+  writeFileSync(
+    schemaPath,
+    JSON.stringify({
+      type: "object",
+      properties: {
+        answer_text: { type: "string" },
+        citation_urls: { type: "array", items: { type: "string" } }
+      },
+      required: ["answer_text", "citation_urls"],
+      additionalProperties: false
+    }),
+    "utf8"
+  );
+
+  try {
+    const args = buildCodexExecArgs({
+      baseArgs: launch.baseArgs,
+      prompt,
+      schemaPath,
+      outputPath,
+      scratchDir: os.tmpdir()
+    });
+    const command = [shellQuote(launch.command), ...args.map(shellQuote)].join(" ");
+
+    await execFileAsync(
+      "zsh",
+      [
+        "-lc",
+        `${command} </dev/null >${shellQuote(stdoutPath)} 2>${shellQuote(stderrPath)}`
+      ],
+      {
+        cwd: repoRoot,
+        maxBuffer: 10 * 1024 * 1024,
+        timeout: openaiLocalOauthTimeoutMs
+      }
+    );
+
+    if (!existsSync(outputPath)) {
+      throw new Error("openai_local_oauth run skipped: Codex did not produce structured output");
+    }
+
+    const parsed = JSON.parse(readFileSync(outputPath, "utf8"));
+    const citations = Array.isArray(parsed.citation_urls)
+      ? parsed.citation_urls.map((value) => String(value || "").trim()).filter(Boolean)
+      : [];
+
+    return {
+      answerText: String(parsed.answer_text || ""),
+      citations,
+      notes: "openai local oauth run via Codex CLI; dev comparison run; citations model-reported or empty"
+    };
+  } finally {
+    rmSync(tempDir, { recursive: true, force: true });
+  }
 }
 
 async function runExaAnswer(prompt, apiKey) {
@@ -219,6 +291,7 @@ function buildProviders({ includeDev, includeExa, onlyExa, openAIKey, exaKey, pr
   }
 
   providers.push(
+    { system: "openai_local_oauth", run: () => runOpenAILocalOAuth(prompt) },
     { system: "opencode_dev", run: () => runOpenCode(prompt) },
     { system: "kilocode_dev", run: () => runKiloCode(prompt) }
   );
@@ -255,9 +328,20 @@ function isMissingCommandError(error) {
   return Boolean(error) && typeof error === "object" && "code" in error && error.code === "ENOENT";
 }
 
+function isTimeoutError(error) {
+  return Boolean(error) && typeof error === "object" && (
+    ("code" in error && error.code === "ETIMEDOUT") ||
+    ("killed" in error && error.killed === true && "signal" in error && error.signal === "SIGTERM")
+  );
+}
+
 function noteFromError(system, error) {
   if (isMissingCommandError(error)) {
     return `${system} run skipped: command not found`;
+  }
+
+  if (isTimeoutError(error)) {
+    return `${system} run skipped: command timed out`;
   }
 
   return error instanceof Error ? error.message : String(error);

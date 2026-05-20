@@ -23,12 +23,13 @@ The framework benchmarks answer engines, tracks visibility and citation behavior
 
 - `perplexity` rows are the main production evidence source for the Trust Chain scorecard.
 - `exa_answer` rows are a production comparison source.
-- `openai_web_search` rows are comparison or development outputs unless explicitly promoted later.
+- `openai_web_search` rows are API-keyed OpenAI comparison outputs unless explicitly promoted later.
+- `openai_local_oauth` rows are local OAuth-backed OpenAI diagnostic outputs via Codex CLI.
 - `opencode_dev` and `kilocode_dev` rows are development or public-site simulation outputs.
 - The default prompt-evidence command stays production-safe by running `perplexity` only.
 - Use `--include-exa` when you want to compare Exa against the production benchmark.
 - Use `--only-exa` when you want a clean Exa-only comparison run without default Perplexity rows.
-- Use `--include-dev` when you want to compare development providers or test the pipeline locally.
+- Use `--include-dev` when you want to compare development providers, including `openai_local_oauth`, or test the pipeline locally.
 
 ## Evidence classes
 
@@ -67,11 +68,23 @@ If you want the file to be optional:
 node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --include-exa
 ```
 
+For a comparison run that includes local OAuth-backed OpenAI plus the other dev providers:
+
+```bash
+node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --include-exa --include-dev
+```
+
 Expected keys:
 
 - `EXA_API_KEY`
 - `PERPLEXITY_API_KEY`
 - `OPENAI_API_KEY`
+
+Optional local Codex overrides:
+
+- `OPENAI_LOCAL_CODEX_JS`
+- `OPENAI_LOCAL_NODE_BIN`
+- `OPENAI_LOCAL_CODEX_BIN`
 
 ## Update routine
 

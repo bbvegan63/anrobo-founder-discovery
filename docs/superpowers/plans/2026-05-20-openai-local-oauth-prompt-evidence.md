@@ -4,7 +4,7 @@
 
 **Goal:** Add a separate `openai_local_oauth` provider to the W&Patent prompt-evidence runner so local OpenAI OAuth sessions can power diagnostic comparison runs without `OPENAI_API_KEY`.
 
-**Architecture:** Keep the existing `openai_web_search` API path unchanged and add a new helper module that resolves and launches a local Codex CLI path with structured JSON output. The runner will treat that helper like the other dev providers and append normalized rows without changing the CSV schema.
+**Architecture:** Keep the existing `openai_web_search` API path unchanged and add a new helper module that resolves and launches a local Codex CLI path with structured JSON output. The runner will treat that helper like the other dev providers, close stdin explicitly so Codex does not wait for extra input, and append normalized rows without changing the CSV schema.
 
 **Tech Stack:** Node.js, `node:test`, CommonJS helper modules, Codex CLI `exec` JSON-schema output, filesystem temp files
 
@@ -120,7 +120,7 @@ resolveCodexLaunch(env)
 
 Behavior:
 
-- `buildStructuredPrompt(prompt)` tells Codex to answer the supplied prompt using web search when needed and return JSON with `answer_text` and `citation_urls`
+- `buildStructuredPrompt(prompt)` gives Codex the shortest stable instruction set needed to return JSON with `answer_text` and `citation_urls`
 - `findVoltaCodexLaunch(...)` scans `~/.volta/tools/image/node/*`
 - `resolveCodexLaunch(env)` honors env overrides before falling back to Volta and finally `codex`
 
@@ -134,7 +134,7 @@ In `scripts/run-prompt-evidence.mjs`:
 - invoke Codex with:
 
 ```text
-exec --skip-git-repo-check --ephemeral --search --color never --cd /tmp --output-schema <schema> -o <output> <prompt>
+exec --skip-git-repo-check --ephemeral --output-schema <schema> -o <output> <prompt>
 ```
 
 - parse returned JSON
@@ -144,7 +144,7 @@ exec --skip-git-repo-check --ephemeral --search --color never --cd /tmp --output
 {
   answerText,
   citations,
-  notes: "openai local oauth run via Codex CLI; dev comparison run; citations model-reported"
+  notes: "openai local oauth run via Codex CLI; dev comparison run; citations model-reported or empty"
 }
 ```
 
