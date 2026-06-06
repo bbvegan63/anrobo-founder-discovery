@@ -18,6 +18,9 @@ The report should:
 The report should not replace the existing working files.
 It should sit above them as a synthesis layer.
 
+This reporting layer is intended to be reusable across additional third-party founder websites and founder profiles as they are added to `anrobo-founder-discovery`.
+W&Patent and OpenFor are the initial working examples, not the limit of the design.
+
 ## Current Context
 
 Each founder already has a stable working structure:
@@ -289,6 +292,7 @@ This reporting layer is appropriate for both current founders:
 - OpenFor as the comparison control
 
 Both already have the file structure needed to support synthesis without adding a dashboard or cross-founder reporting layer first.
+They should be treated as the first examples of a general per-founder reporting pattern that can extend to future founder websites and profiles.
 
 ## Success Criteria
 
@@ -298,7 +302,7 @@ The design is successful when:
 - owners can quickly understand current progress and next moves
 - reports are grounded in existing scorecards and evidence rather than ad hoc summaries
 - monthly and event-triggered reports can coexist without creating noise
-- the system scales to additional founders without redesign
+- the system scales to additional founders and third-party founder websites without redesign
 
 ## Recommended First Implementation
 
