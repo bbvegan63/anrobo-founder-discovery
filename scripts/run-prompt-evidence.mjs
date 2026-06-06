@@ -38,13 +38,29 @@ function shellQuote(value) {
   return `'${String(value).replace(/'/g, `'\\''`)}'`;
 }
 
+function summarizeCliStderr(stderrText) {
+  const lines = String(stderrText || "")
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  const explicitError = [...lines].reverse().find((line) => line.startsWith("ERROR:"));
+  if (explicitError) {
+    return explicitError;
+  }
+
+  return lines.at(-1) || "";
+}
+
 function parseArgs(argv) {
   const onlyExa = argv.includes("--only-exa");
+  const onlyOpenAILocalOauth = argv.includes("--only-openai-local-oauth");
 
   return {
     includeDev: argv.includes("--include-dev"),
     includeExa: argv.includes("--include-exa") || onlyExa,
-    onlyExa
+    onlyExa,
+    onlyOpenAILocalOauth
   };
 }
 
@@ -180,6 +196,14 @@ async function runOpenAILocalOAuth(prompt) {
       citations,
       notes: "openai local oauth run via Codex CLI; dev comparison run; citations model-reported or empty"
     };
+  } catch (error) {
+    const stderrSummary = existsSync(stderrPath)
+      ? summarizeCliStderr(readFileSync(stderrPath, "utf8"))
+      : "";
+    if (stderrSummary) {
+      throw new Error(`openai_local_oauth run failed: ${stderrSummary}`);
+    }
+    throw error;
   } finally {
     rmSync(tempDir, { recursive: true, force: true });
   }
@@ -246,8 +270,20 @@ async function runKiloCode(prompt) {
   };
 }
 
-function buildProviders({ includeDev, includeExa, onlyExa, openAIKey, exaKey, prompt }) {
+function buildProviders({
+  includeDev,
+  includeExa,
+  onlyExa,
+  onlyOpenAILocalOauth,
+  openAIKey,
+  exaKey,
+  prompt
+}) {
   const providers = [];
+
+  if (onlyOpenAILocalOauth) {
+    return [{ system: "openai_local_oauth", run: () => runOpenAILocalOAuth(prompt) }];
+  }
 
   if (!onlyExa) {
     providers.push({
@@ -348,7 +384,7 @@ function noteFromError(system, error) {
 }
 
 async function main() {
-  const { includeDev, includeExa, onlyExa } = parseArgs(process.argv.slice(2));
+  const { includeDev, includeExa, onlyExa, onlyOpenAILocalOauth } = parseArgs(process.argv.slice(2));
   const prompts = readPrompts();
   const openAIKey = optionalEnv("OPENAI_API_KEY");
   const exaKey = optionalEnv("EXA_API_KEY");
@@ -357,7 +393,15 @@ async function main() {
 
   for (const prompt of prompts) {
     const timestamp = new Date().toISOString();
-    const providers = buildProviders({ includeDev, includeExa, onlyExa, openAIKey, exaKey, prompt });
+    const providers = buildProviders({
+      includeDev,
+      includeExa,
+      onlyExa,
+      onlyOpenAILocalOauth,
+      openAIKey,
+      exaKey,
+      prompt
+    });
 
     for (const provider of providers) {
       try {

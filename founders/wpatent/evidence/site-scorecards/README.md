@@ -29,6 +29,7 @@ The framework benchmarks answer engines, tracks visibility and citation behavior
 - The default prompt-evidence command stays production-safe by running `perplexity` only.
 - Use `--include-exa` when you want to compare Exa against the production benchmark.
 - Use `--only-exa` when you want a clean Exa-only comparison run without default Perplexity rows.
+- Use `--only-openai-local-oauth` when you want a clean local OpenAI diagnostic run without the other dev providers.
 - Use `--include-dev` when you want to compare development providers, including `openai_local_oauth`, or test the pipeline locally.
 
 ## Evidence classes
@@ -72,6 +73,12 @@ For a comparison run that includes local OAuth-backed OpenAI plus the other dev 
 
 ```bash
 node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --include-exa --include-dev
+```
+
+For a local OAuth-only diagnostic run:
+
+```bash
+node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --only-openai-local-oauth
 ```
 
 Expected keys:

@@ -84,6 +84,7 @@ test("local OpenAI OAuth helper resolves explicit and Volta Codex launches", () 
   const {
     buildCodexExecArgs,
     buildStructuredPrompt,
+    findBundledAppCodexLaunch,
     findVoltaCodexLaunch,
     resolveCodexLaunch
   } = require("../scripts/lib/openai-local-oauth.js");
@@ -112,6 +113,15 @@ test("local OpenAI OAuth helper resolves explicit and Volta Codex launches", () 
     baseArgs: [
       "/Users/tester/.volta/tools/image/node/25.6.1/lib/node_modules/@openai/codex/bin/codex.js"
     ]
+  });
+
+  const bundledLaunch = findBundledAppCodexLaunch({
+    exists: (value) => value === "/Applications/Codex.app/Contents/Resources/codex"
+  });
+
+  assert.deepEqual(bundledLaunch, {
+    command: "/Applications/Codex.app/Contents/Resources/codex",
+    baseArgs: []
   });
 
   assert.match(buildStructuredPrompt("startup patent strategy"), /citation_urls/i);
@@ -219,6 +229,7 @@ test("runner defaults to perplexity only and supports dev providers", () => {
   assert.match(runner, /--include-dev/);
   assert.match(runner, /--include-exa/);
   assert.match(runner, /--only-exa/);
+  assert.match(runner, /--only-openai-local-oauth/);
   assert.match(runner, /perplexity/);
   assert.match(runner, /exa_answer/);
   assert.match(runner, /openai_web_search/);
@@ -234,4 +245,5 @@ test("runner includes CLI-based dev provider handling", () => {
   assert.match(runner, /execFile/);
   assert.match(runner, /opencode/);
   assert.match(runner, /kilocode/);
+  assert.match(runner, /summarizeCliStderr/);
 });

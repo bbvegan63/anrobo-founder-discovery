@@ -113,6 +113,12 @@ For a development comparison run that includes the local OAuth-backed OpenAI pat
 node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --include-exa --include-dev
 ```
 
+For a cleaner local diagnostic run that uses only the OAuth-backed OpenAI lane:
+
+```bash
+node --env-file-if-exists=.env.local scripts/run-prompt-evidence.mjs --only-openai-local-oauth
+```
+
 ## Relationship to other `anrobo-os` modules
 
 This module can eventually exchange handoffs with:

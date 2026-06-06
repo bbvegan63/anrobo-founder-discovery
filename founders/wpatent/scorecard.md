@@ -1,6 +1,6 @@
 # W&Patent Scorecard
 
-> **Version:** 2026-05-20
+> **Version:** 2026-06-06
 > **Role:** Primary founder-discovery working example
 
 ## Summary Dashboard
@@ -8,27 +8,28 @@
 | Category | Weight | Working Score | Evidence Base | Read |
 | --- | --- | --- | --- | --- |
 | Identity Surface Score | 20 | 15/20 | site pages, schema, founder attribution | Strong |
-| Broad Discovery Score | 20 | 0/20 | `2026-05-20` Exa-only rerun plus local OpenAI OAuth broad diagnostic | Still invisible on generic broad prompts |
+| Broad Discovery Score | 20 | 2/20 | `2026-06-06` Exa-only rerun plus standalone local OpenAI OAuth diagnostic | First Exa citation foothold exists, but generic discovery is still weak |
 | Branded Grounding Score | 20 | 5/20 | `2026-05-19` branded control evidence | Earlier weak framing exists, but the production rerun is still Perplexity-blocked |
 | Intent Fit Score | 20 | 15/20 | site structure and topic clustering | Stronger than retrieval |
-| Improvement Readiness Score | 20 | 17/20 | page, proof, cleaner repo boundary, roadmap clarity, local OAuth diagnostic lane | High, but production comparison is still partially blocked |
+| Improvement Readiness Score | 20 | 18/20 | page, proof, cleaner repo boundary, roadmap clarity, standalone local OAuth diagnostic lane | High, but production comparison is still partially blocked |
 
-**Working total:** `52/100`
+**Working total:** `55/100`
 
 ## Live Prompt Snapshot
 
 | Tier | Prompts | Mentioned | `wpatent.com` Cited | `Andrew Leung` Named |
 | --- | --- | --- | --- | --- |
-| Broad discovery fixed pack (`exa_answer`, `2026-05-20` post-founder-authority) | 10 | 0/10 | 0/10 | 0/10 |
-| Broad diagnostic (`openai_local_oauth_manual`, `2026-05-20`) | 8 structured answers | 0/8 | 0/8 | 0/8 |
+| Broad discovery fixed pack (`exa_answer`, `2026-06-06`) | 10 | 0/10 | 1/10 | 0/10 |
+| Broad diagnostic (`openai_local_oauth`, `2026-06-06`) | 10 | 0/10 | 0/10 | 0/10 |
 | Branded control rerun | pending `PERPLEXITY_API_KEY` restore | - | - | - |
 
 ## Current Read
 
-The fresh Exa-only rerun after the founder-authority page is still a hard zero across the full fixed broad prompt pack.
-The manual local OpenAI OAuth diagnostic loop also stayed generic on the eight prompts that returned structured output.
-That means the new founder-authority page did not yet convert into generic discovery, first-party citation, or founder naming on either of the new broad reads.
+The June 6 Exa rerun is the first saved broad-pack evidence that a live W&Patent page was cited without a branded prompt.
+The win is narrow: `startup-patent-strategy.htm` was cited once for `patent strategy for startups`, but no run produced direct `W&Patent` naming or `Andrew Leung` naming.
 
-The operating boundary is cleaner now because prompt evidence lives in `anrobo-founder-discovery`, and the local OpenAI OAuth diagnostic path now exists without requiring `OPENAI_API_KEY`.
-But the production comparison loop is still only partially restored because `PERPLEXITY_API_KEY` remains empty in `.env.local`.
-This score refresh should therefore be treated as a strong broad-diagnostic read, not a full production cross-provider refresh.
+The standalone local OpenAI OAuth diagnostic lane now works cleanly through the desktop-app Codex binary, but its ten-answer batch still stayed generic and did not cite W&Patent.
+`trust chain for websites` also continued to resolve to TLS / certificate-chain language.
+
+This score refresh should therefore be treated as a meaningful but limited improvement in broad discovery, not a full production recovery.
+The next decision should wait for the restored Perplexity benchmark rather than defaulting immediately to another internal content asset.

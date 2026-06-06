@@ -37,6 +37,18 @@ function normalizeVersionEntries(entries) {
     .sort((left, right) => right.localeCompare(left, undefined, { numeric: true }));
 }
 
+function findBundledAppCodexLaunch({ exists = existsSync } = {}) {
+  const bundledCodex = "/Applications/Codex.app/Contents/Resources/codex";
+  if (!exists(bundledCodex)) {
+    return null;
+  }
+
+  return {
+    command: bundledCodex,
+    baseArgs: []
+  };
+}
+
 function findVoltaCodexLaunch({
   homeDir = os.homedir(),
   exists = existsSync,
@@ -93,12 +105,13 @@ function resolveCodexLaunch(env = process.env) {
     };
   }
 
-  return findVoltaCodexLaunch() || { command: "codex", baseArgs: [] };
+  return findBundledAppCodexLaunch() || findVoltaCodexLaunch() || { command: "codex", baseArgs: [] };
 }
 
 module.exports = {
   buildCodexExecArgs,
   buildStructuredPrompt,
+  findBundledAppCodexLaunch,
   findVoltaCodexLaunch,
   resolveCodexLaunch
 };
