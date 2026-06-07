@@ -113,7 +113,7 @@ Then: read `agents/comparison-controls.md` and `playbooks/comparison-control.md`
 **Step 2:** Ask output type:
 > "Do you want a founder post, case note, proof note, or intro note?"
 
-Then: read `agents/publishing-loop.md` and `playbooks/founder-post-loop.md`. Produce outputs in `outputs/publishing/`.
+Then: read `agents/publishing-loop.md` and `playbooks/founder-post-loop.md`. Draft in-progress founder-facing assets in `drafts/<founder-id>/`. Promote approved founder posts, case notes, and proof notes into `outputs/publishing/`.
 If the asset is actually published or sent offsite, also read `agents/external-signals.md` and `playbooks/external-signal-loop.md` to log the distribution or response signal.
 
 ### Flow 8 — Free-Form
@@ -191,6 +191,7 @@ Keep this shape consistent so different humans and agents can run the same proce
 - founder working files -> `founders/<founder-id>/`
 - external signal evidence -> `founders/<founder-id>/evidence/`
 - imported mixed-mode feedback -> `founders/<founder-id>/evidence/imported-feedback/`
+- temporary founder-facing drafts -> `drafts/<founder-id>/`
 - shared incubator state -> `community/`
 - sync packets -> `sync/`
 - cross-founder scorecards -> `outputs/scorecards/`

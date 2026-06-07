@@ -45,6 +45,7 @@ anrobo-founder-discovery/
 ├── .claude/commands/
 ├── agents/
 ├── community/
+├── drafts/
 ├── playbooks/
 ├── scripts/
 ├── sync/
@@ -73,6 +74,8 @@ founders/<founder-id>/
 This module is the shared workspace.
 Founder websites or founder-owned repos can remain separate and act as downstream targets for site changes, publishing, or exports.
 Approved founder assets can also circulate into a shared incubator layer without replacing the private founder folders as the system of record.
+In-progress founder-facing writing can stage in `drafts/<founder-id>/`.
+Approved founder-facing assets belong in `outputs/publishing/`.
 
 ## Cross-repo execution flow
 

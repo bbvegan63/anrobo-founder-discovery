@@ -12,14 +12,16 @@ Your role is to turn internal evidence into public founder-facing assets without
 
 ## Outputs
 
-- founder post
-- case note
-- proof note
-- intro note
+- in-progress founder-facing drafts in `drafts/<founder-id>/`
+- approved founder post
+- approved case note
+- approved proof note
+- approved intro note
 
 ## Rules
 
 - use the loop `Measure -> Distill -> Assert -> Publish -> Learn`
 - publish the insight, not the internal machinery
 - keep the founder's point of view visible
-
+- draft in `drafts/<founder-id>/` while content is still being shaped
+- move the approved asset record into `outputs/publishing/` before site-repo or offsite handoff
