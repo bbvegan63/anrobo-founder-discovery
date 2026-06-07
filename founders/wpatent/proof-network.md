@@ -2,7 +2,9 @@
 
 ## Current proof
 
+- site-wide founder-advisory reposition centered on Andrew Leung, OpenFor member context, and founder patent strategy / commercialization
 - topic pages for startup patent strategy and patent commercialization
+- canonical services page at `https://wpatent.com/services.htm`
 - tightened direct-answer blocks on the two core topic pages for startup patent strategy and patent commercialization
 - first saved broad-pack Exa citation on `https://wpatent.com/startup-patent-strategy.htm`
 - founder-signature page at `https://wpatent.com/andrew-leung-startup-patent-strategy.htm`
@@ -17,7 +19,7 @@
 - more applied examples around commercialization and founder authority
 - more external proof signals and citations beyond the site itself
 - stronger repeated proof blocks across multiple topic clusters
-- clearer repeated entity linkage between `W&Patent`, `Andrew Leung`, and core topic pages
+- evidence that answer engines now repeat the clearer `W&Patent` -> `Andrew Leung` -> OpenFor -> founder patent strategy story
 - a clearer answer on how W&Patent thinks about patent strategy versus open, permissive, or other non-patent alternatives
 
 ## In-Progress Asset
@@ -29,7 +31,8 @@
 - post-founder-authority Exa plus local OpenAI broad rerun recorded in `founders/wpatent/evidence/2026-05-20-broad-rerun-after-founder-authority-page.md`
 - core answer-block tightening recorded in `founders/wpatent/evidence/2026-05-20-core-answer-block-tightening.md`
 - June 6 propagation rerun recorded in `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
+- June 7 founder-advisory reposition publish check recorded in `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 
 ## Smallest useful next asset
 
-- restore the production Perplexity compare before adding another internal proof asset, then decide whether the next move should shift to external founder proof or Trust Chain disambiguation
+- rerun measurement against the June 7 founder-advisory reposition before adding another internal proof asset, then decide whether the next move should shift to external founder proof or Trust Chain disambiguation

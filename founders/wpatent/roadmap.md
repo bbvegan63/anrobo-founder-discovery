@@ -1,16 +1,16 @@
 # W&Patent Roadmap
 
-> **Date:** 2026-06-06
-> **Current bottleneck:** broad discovery is no longer a hard zero because Exa cited `startup-patent-strategy.htm` once on the broad pack, but W&Patent naming, Andrew naming, and production Perplexity comparison are still missing
+> **Date:** 2026-06-07
+> **Current bottleneck:** the founder-advisory reposition is now live, but it has not yet been remeasured; W&Patent naming, Andrew naming, OpenFor-linked branded grounding, and the production Perplexity comparison are still unconfirmed after the site shift
 
 ## Priority Actions
 
-1. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
-2. Treat `openai_local_oauth` as a clean standalone diagnostic lane via `--only-openai-local-oauth`, not as a production benchmark.
-3. Compare the next production rerun against the `2026-06-06` baseline: Exa now has `1/10` `wpatent.com` citations, but still `0/10` `W&Patent` mentions and `0/10` `Andrew Leung` naming.
-4. Hold off on another internal patent support page until the production compare shows whether the startup-patent-strategy foothold persists or spreads.
-5. If the production compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
-6. If `trust chain for websites` continues to drift to TLS language after the production compare, tighten `trust-chain.htm` and `trust-chain-explainer.htm`.
+1. Let the June 7 founder-advisory reposition settle, then rerun the Exa broad pack and the local OAuth diagnostic lane from founder-discovery.
+2. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
+3. Compare the next post-reposition read against the `2026-06-06` baseline: Exa had `1/10` `wpatent.com` citations, but still `0/10` `W&Patent` mentions and `0/10` `Andrew Leung` naming before the June 7 site shift.
+4. Hold off on promoting the W&Patent trilogy drafts or adding another internal support page until the post-reposition measurement shows whether the clearer Andrew-led identity changes retrieval.
+5. If the post-reposition compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
+6. If `trust chain for websites` continues to drift to TLS language after the post-reposition compare, tighten `trust-chain.htm` and `trust-chain-explainer.htm`.
 
 ## Current Execution Status
 
@@ -25,15 +25,17 @@
 - `2026-05-20`: core answer-block tightening implemented in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `cbf2dc8`, adding explicit `W&Patent's Direct Answer` and `Andrew Leung's Direct Answer` sections to `startup-patent-strategy.htm` and `patent-commercialization-for-founders.htm`; see `founders/wpatent/evidence/2026-05-20-core-answer-block-tightening.md`
 - `2026-06-06`: Exa broad rerun produced the first broad-pack `wpatent.com` citation on `patent strategy for startups`, pointing to `https://wpatent.com/startup-patent-strategy.htm`; see `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
 - `2026-06-06`: the local OpenAI OAuth lane was separated into a clean standalone command with `--only-openai-local-oauth`, rerun on the desktop-app Codex binary, and stayed `0/10` on W&Patent, site citation, and Andrew naming; see `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
+- `2026-06-07`: founder-advisory reposition implemented, pushed, and verified live from `/Users/andrew/backup/work/github/hmc62843u.github.io` as `1df4e5b`; the live homepage now centers Andrew Leung, OpenFor member context, and founder patent strategy / commercialization; see `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - current blocker: `PERPLEXITY_API_KEY` is still empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: restore that key, rerun the production benchmark with `--include-exa`, and compare it against the new June 6 baseline
+- next evidence step: rerun the broad pack after initial propagation, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 pre-reposition baseline
 
 ## Recheck
 
 - rerun the 10-prompt broad pack
+- check whether the June 7 founder-advisory reposition changes branded/entity retrieval
 - rerun branded control prompts once the Perplexity compare is restored
 - check whether `startup-patent-strategy.htm` keeps or improves its Exa citation foothold
-- compare whether any provider now adds direct `W&Patent` or `Andrew Leung` naming
+- compare whether any provider now adds direct `W&Patent`, `Andrew Leung`, or OpenFor-linked identity naming
 
 ## Agent Note
 
@@ -42,3 +44,4 @@ For the current evidence-led execution order, read:
 - `founders/wpatent/evidence/2026-05-19-next-moves.md`
 - `founders/wpatent/evidence/2026-05-20-next-agent-session-recommendation.md`
 - `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
+- `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
