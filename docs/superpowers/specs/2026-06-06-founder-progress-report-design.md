@@ -21,6 +21,9 @@ It should sit above them as a synthesis layer.
 This reporting layer is intended to be reusable across additional third-party founder websites and founder profiles as they are added to `anrobo-founder-discovery`.
 W&Patent and OpenFor are the initial working examples, not the limit of the design.
 
+This document itself is a design spec, so `docs/superpowers/specs/` is the correct location.
+Per the module output conventions, `outputs/publishing/` is reserved for founder-facing assets such as posts, case notes, and proof notes rather than internal design documents.
+
 ## Current Context
 
 Each founder already has a stable working structure:
