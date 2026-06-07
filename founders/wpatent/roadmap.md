@@ -1,16 +1,16 @@
 # W&Patent Roadmap
 
 > **Date:** 2026-06-07
-> **Current bottleneck:** the June 7 Andrew-led simplification and authority-page consolidation are now live, but they have not yet been remeasured; W&Patent naming, Andrew naming, OpenFor-linked branded grounding, and the production Perplexity comparison are still unconfirmed after the simpler site shift
+> **Current bottleneck:** the June 7 Andrew-led simplification and the first follow-on page are live, but the first-wave signal loop is still incomplete because the Andrew LinkedIn reinforcement is not yet live; the immediate post-article rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane for W&Patent naming, `wpatent.com` citation, and Andrew naming
 
 ## Priority Actions
 
-1. Let the June 7 Andrew-led simplification and authority-page consolidation settle, then rerun the Exa broad pack and the local OAuth diagnostic lane from founder-discovery.
-2. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
-3. Compare the next post-simplification read against the `2026-06-06` baseline: Exa had `1/10` `wpatent.com` citations, but still `0/10` `W&Patent` mentions and `0/10` `Andrew Leung` naming before the latest June 7 site changes.
-4. Hold off on promoting the W&Patent trilogy drafts or adding another internal support page until the post-simplification measurement shows whether the cleaner Andrew-led identity changes retrieval.
-5. If the post-reposition compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
-6. If `trust chain for websites` continues to drift to TLS language after the post-reposition compare, tighten `trust-chain.htm` and `trust-chain-explainer.htm`.
+1. Publish the Andrew LinkedIn reinforcement for `startup-patent-strategy.htm`, or explicitly waive that channel and record the decision.
+2. After the external reinforcement decision, rerun the Exa broad pack and the local OAuth diagnostic lane again from founder-discovery and compare them against the immediate June 7 post-article check.
+3. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
+4. Keep the commercialization-page consolidation deferred until the first-wave signal loop is either completed or explicitly waived.
+5. Hold off on promoting the next W&Patent draft until the article-plus-anchor wave has a settled measurement read.
+6. If the post-reinforcement compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
 
 ## Current Execution Status
 
@@ -28,8 +28,9 @@
 - `2026-06-07`: founder-advisory reposition implemented, pushed, and verified live from `/Users/andrew/backup/work/github/hmc62843u.github.io` as `1df4e5b`; the live homepage now centers Andrew Leung, OpenFor member context, and founder patent strategy / commercialization; see `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - `2026-06-07`: soft-minimal redesign pushed as `859293c`, reducing the main visitor path to `Home`, `Strategy`, `Services`, and `About` while keeping the support layer live underneath
 - `2026-06-07`: founder authority consolidated into `startup-patent-strategy.htm` and the older founder-signature URL retired into a canonicalized redirect page as `4d5912a`; see `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
+- `2026-06-07`: `provisional-vs-nda.htm` is live as the first promoted follow-on support page; immediate rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane, and the first-wave LinkedIn reinforcement still was not logged as live; see `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
 - current blocker: `PERPLEXITY_API_KEY` is still empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: rerun the broad pack after initial propagation, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 pre-simplification baseline
+- next evidence step: complete or explicitly waive the first-wave LinkedIn reinforcement, rerun the broad pack after that choice has had time to propagate, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 and immediate June 7 baselines
 
 ## Recheck
 
@@ -48,3 +49,4 @@ For the current evidence-led execution order, read:
 - `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
 - `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
+- `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`

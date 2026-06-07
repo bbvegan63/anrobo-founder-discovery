@@ -33,7 +33,8 @@
 - June 6 propagation rerun recorded in `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
 - June 7 founder-advisory reposition publish check recorded in `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - June 7 soft-minimal redesign and authority-page consolidation recorded in `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
+- June 7 immediate post-`provisional-vs-nda` rerun recorded in `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
 
 ## Smallest useful next asset
 
-- rerun measurement against the June 7 soft-minimal Andrew-led simplification before adding another internal proof asset, then decide whether the next move should shift to external founder proof or Trust Chain disambiguation
+- complete or explicitly waive the missing LinkedIn reinforcement before adding another internal proof asset, then rerun measurement and decide whether the next move should shift to external founder proof or Trust Chain disambiguation
