@@ -131,6 +131,20 @@ The article should have:
 - normal W&Patent article structure
 - no draft-only sections such as `Social Media Snippet`
 
+For this queue, "normal W&Patent article structure" means the live article shell pattern already used by core pages such as:
+
+- `startup-patent-strategy.htm`
+- `services.htm`
+- `trust-chain-explainer.htm`
+
+The promoted article should therefore include:
+
+- the standard page shell and shared header/footer
+- an article header with title, lead, and founder-context framing where appropriate
+- an article body with scannable section structure
+- an article CTA / next-step block near the end
+- normal metadata support such as title, canonical, and schema used by the live W&Patent article pattern
+
 ### 3. Anchor Support Fit
 
 The article should:
@@ -154,6 +168,27 @@ The article should move into `outputs/publishing/` only when it is:
 - actually approved as the next public asset
 - not merely present as a draft
 
+## Draft Lifecycle After Promotion
+
+The draft folder should not accumulate stale files that still look pending after publication.
+
+Default rule:
+
+- when a draft is promoted into `outputs/publishing/` as the actual next approved asset, remove the original file from `drafts/wpatent/` in the same change
+
+Reason:
+
+- `outputs/publishing/` becomes the durable approved artifact
+- the live site becomes the implemented public surface
+- git history preserves the earlier draft state without leaving a misleading pending file in the queue
+
+Exception:
+
+- if a draft is intentionally being kept as source material for a later derivative asset, it may remain in `drafts/wpatent/`
+- in that case, add a short status note at the top stating that it is retained as source material and identifying the promoted derivative plus promotion date
+
+The pillar draft is the clearest current example of a file that may remain as source material rather than being directly promoted.
+
 ## Minimal Publishing Loop
 
 Use this loop for each promoted draft:
@@ -163,8 +198,13 @@ Use this loop for each promoted draft:
 3. normalize it for tone and article shape
 4. promote that one file into `outputs/publishing/`
 5. implement and publish it on W&Patent
-6. log the publish event in founder-discovery
-7. rerun evidence before choosing the next draft
+6. run site verification:
+   - update internal links if needed
+   - update sitemap if needed
+   - run the relevant site tests
+7. clean up the original draft according to the lifecycle rule above
+8. log the publish event in founder-discovery
+9. rerun evidence before choosing the next draft
 
 This loop should stay sequential.
 
