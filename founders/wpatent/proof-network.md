@@ -2,12 +2,12 @@
 
 ## Current proof
 
-- site-wide founder-advisory reposition centered on Andrew Leung, OpenFor member context, and founder patent strategy / commercialization
+- site-wide simplified Andrew-led top-level path centered on `Home`, `Strategy`, `Services`, and `About`
 - topic pages for startup patent strategy and patent commercialization
 - canonical services page at `https://wpatent.com/services.htm`
 - tightened direct-answer blocks on the two core topic pages for startup patent strategy and patent commercialization
 - first saved broad-pack Exa citation on `https://wpatent.com/startup-patent-strategy.htm`
-- founder-signature page at `https://wpatent.com/andrew-leung-startup-patent-strategy.htm`
+- Andrew authority consolidated into `https://wpatent.com/startup-patent-strategy.htm` with the older founder-signature URL retired into a canonicalized redirect page
 - Trust Chain methodology and explainer pages
 - startup patent strategy case note
 - patent strategy versus openness proof note at `https://wpatent.com/patent-strategy-open-licensing.htm`
@@ -16,7 +16,7 @@
 
 ## Missing proof
 
-- more applied examples around commercialization and founder authority
+- more external proof signals that reinforce Andrew authority beyond the site itself
 - more external proof signals and citations beyond the site itself
 - stronger repeated proof blocks across multiple topic clusters
 - evidence that answer engines now repeat the clearer `W&Patent` -> `Andrew Leung` -> OpenFor -> founder patent strategy story
@@ -32,7 +32,8 @@
 - core answer-block tightening recorded in `founders/wpatent/evidence/2026-05-20-core-answer-block-tightening.md`
 - June 6 propagation rerun recorded in `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
 - June 7 founder-advisory reposition publish check recorded in `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
+- June 7 soft-minimal redesign and authority-page consolidation recorded in `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
 
 ## Smallest useful next asset
 
-- rerun measurement against the June 7 founder-advisory reposition before adding another internal proof asset, then decide whether the next move should shift to external founder proof or Trust Chain disambiguation
+- rerun measurement against the June 7 soft-minimal Andrew-led simplification before adding another internal proof asset, then decide whether the next move should shift to external founder proof or Trust Chain disambiguation
