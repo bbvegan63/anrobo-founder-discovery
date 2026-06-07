@@ -1,11 +1,10 @@
 {
   "project": "W&Patent",
-  "version": "2026-05-19",
+  "version": "2026-06-07",
   "founder": "Andrew Leung",
   "domain": "wpatent.com",
   "topics": [
     "startup patent strategy",
-    "patent commercialization for founders",
     "founder-led authority building",
     "AI-readable company websites",
     "Trust Chain methodology"
@@ -16,7 +15,6 @@
       "prompts": [
         "patent strategy for startups",
         "startup defensibility through patents",
-        "patent commercialization for founders",
         "founder-led authority building",
         "AI-readable company website"
       ]
@@ -46,4 +44,3 @@
     "Branded control prompts test grounding, not open-market discovery."
   ]
 }
-

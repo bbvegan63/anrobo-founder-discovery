@@ -1,14 +1,14 @@
 # W&Patent Roadmap
 
 > **Date:** 2026-06-07
-> **Current bottleneck:** the June 7 Andrew-led simplification and the first follow-on page are live, but the first-wave signal loop is still incomplete because the Andrew LinkedIn reinforcement is not yet live; the immediate post-article rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane for W&Patent naming, `wpatent.com` citation, and Andrew naming
+> **Current bottleneck:** the June 7 Andrew-led simplification, first follow-on page, and commercialization-page consolidation are live, but the first-wave signal loop is still incomplete because the Andrew LinkedIn reinforcement is not yet live; the immediate post-article rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane for W&Patent naming, `wpatent.com` citation, and Andrew naming
 
 ## Priority Actions
 
 1. Publish the Andrew LinkedIn reinforcement for `startup-patent-strategy.htm`, or explicitly waive that channel and record the decision.
 2. After the external reinforcement decision, rerun the Exa broad pack and the local OAuth diagnostic lane again from founder-discovery and compare them against the immediate June 7 post-article check.
 3. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
-4. Keep the commercialization-page consolidation deferred until the first-wave signal loop is either completed or explicitly waived.
+4. Rerun the core owned-topic pack without the commercialization prompt and compare whether the smaller topic set improves signal clarity around startup patent strategy, founder authority, and Trust Chain.
 5. Hold off on promoting the next W&Patent draft until the article-plus-anchor wave has a settled measurement read.
 6. If the post-reinforcement compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
 
@@ -29,8 +29,9 @@
 - `2026-06-07`: soft-minimal redesign pushed as `859293c`, reducing the main visitor path to `Home`, `Strategy`, `Services`, and `About` while keeping the support layer live underneath
 - `2026-06-07`: founder authority consolidated into `startup-patent-strategy.htm` and the older founder-signature URL retired into a canonicalized redirect page as `4d5912a`; see `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
 - `2026-06-07`: `provisional-vs-nda.htm` is live as the first promoted follow-on support page; immediate rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane, and the first-wave LinkedIn reinforcement still was not logged as live; see `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
+- `2026-06-07`: standalone commercialization page retired into a helper URL, with its strongest business-leverage logic consolidated into `startup-patent-strategy.htm`; see `founders/wpatent/evidence/2026-06-07-commercialization-page-consolidation.md`
 - current blocker: `PERPLEXITY_API_KEY` is still empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: complete or explicitly waive the first-wave LinkedIn reinforcement, rerun the broad pack after that choice has had time to propagate, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 and immediate June 7 baselines
+- next evidence step: complete or explicitly waive the first-wave LinkedIn reinforcement, rerun the smaller broad pack after that choice has had time to propagate, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 and immediate June 7 baselines
 
 ## Recheck
 
@@ -50,3 +51,4 @@ For the current evidence-led execution order, read:
 - `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
 - `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
+- `founders/wpatent/evidence/2026-06-07-commercialization-page-consolidation.md`

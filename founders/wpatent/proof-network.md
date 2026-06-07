@@ -3,7 +3,7 @@
 ## Current proof
 
 - site-wide simplified Andrew-led top-level path centered on `Home`, `Strategy`, `Services`, and `About`
-- topic pages for startup patent strategy and patent commercialization
+- strategy anchor at `https://wpatent.com/startup-patent-strategy.htm` plus narrower founder-decision support pages
 - canonical services page at `https://wpatent.com/services.htm`
 - tightened direct-answer blocks on the two core topic pages for startup patent strategy and patent commercialization
 - first saved broad-pack Exa citation on `https://wpatent.com/startup-patent-strategy.htm`
@@ -13,6 +13,7 @@
 - patent strategy versus openness proof note at `https://wpatent.com/patent-strategy-open-licensing.htm`
 - founder posts and routing drafts connected to asset-001
 - migrated external signal baseline for `asset-001` in `external-signals.md`
+- commercialization logic consolidated into the startup strategy anchor while the old commercialization URL now behaves as a retired helper page
 
 ## Missing proof
 
@@ -34,6 +35,7 @@
 - June 7 founder-advisory reposition publish check recorded in `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
 - June 7 soft-minimal redesign and authority-page consolidation recorded in `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
 - June 7 immediate post-`provisional-vs-nda` rerun recorded in `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
+- June 7 commercialization-page consolidation recorded in `founders/wpatent/evidence/2026-06-07-commercialization-page-consolidation.md`
 
 ## Smallest useful next asset
 
