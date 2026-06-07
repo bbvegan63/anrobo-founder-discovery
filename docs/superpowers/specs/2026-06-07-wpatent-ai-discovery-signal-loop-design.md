@@ -91,6 +91,7 @@ Hold for later:
 - `drafts/wpatent/2026-06-06-post-draw-first-write-second.md`
 
 Treat the draft pillar as supporting source material for this wave, not as the immediate next public page, because the live flagship guide is already the cleaner authority anchor.
+If the pillar is later promoted out of `drafts/`, it must be retoned before publication so it matches the calmer founder-authority voice in this spec rather than leading with a "what practitioners won't tell you" hook.
 
 ### Phase 3: External Recognition Ask
 
@@ -219,6 +220,16 @@ Do not promote the full W&Patent draft queue into public publication all at once
 ## Measurement Rule
 
 Use a measurement-led loop.
+
+Before the first LinkedIn post goes live, capture a baseline read in founder-discovery so the loop has a clean before/after comparison.
+
+Minimum baseline capture:
+
+- log the current state in a dated W&Patent evidence note
+- preserve the pre-loop score / roadmap interpretation already in founder-discovery
+- run the non-Perplexity checks if they have not already been rerun since the June 7 site reposition:
+  - Exa broad pack
+  - local OpenAI OAuth diagnostic lane
 
 After the LinkedIn post and first follow-on article are live:
 
