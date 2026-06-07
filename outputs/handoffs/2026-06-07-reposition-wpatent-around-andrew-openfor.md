@@ -20,6 +20,16 @@ The new center of gravity is:
 This is not a soft headline tweak.
 This is a top-level business-positioning and information-architecture change.
 
+## Implementation Assumption
+
+For this repositioning brief, treat the `OpenFor member` relationship as:
+
+- true
+- approved for public use
+- intentional as part of the new W&Patent positioning
+
+The implementing agent should therefore publish the member framing directly and should not treat it as optional copy.
+
 ## Why This Change Is Happening
 
 Current founder-discovery evidence says W&Patent is stronger on identity surface and intent fit than on broad discovery and branded grounding.
@@ -117,7 +127,7 @@ The hero should:
 - center Andrew Leung by name
 - state clearly what W&Patent is now
 - state clearly who it serves
-- mention `OpenFor member` context if true and approved
+- mention `OpenFor member` context directly
 - present 1-2 clear CTAs into advisory paths, not marketplace inventory
 
 Recommended homepage priority order:
@@ -142,14 +152,14 @@ should no longer dominate the site identity.
 
 Move toward advisory-first routes such as:
 
-- `Strategy`
-- `Services`
-- `About`
-- `Guides`
-- `FAQ`
-- `Contact`
+- `Home` -> `index.html`
+- `Strategy` -> `startup-patent-strategy.htm`
+- `Services` -> `services.htm`
+- `About` -> `about.htm`
+- `FAQ` -> `faq.htm`
+- `Contact` -> `mailto:wp@wpatent.com` or an equivalent explicit contact CTA
 
-Exact labels may vary, but the new nav must reflect the new business story.
+Use this exact first-pass structure unless the site repo reveals a concrete technical blocker.
 
 ### Marketplace Handling
 
@@ -164,6 +174,28 @@ Recommended treatment:
 
 If a clean demotion is possible without breaking existing site integrity, prefer demotion over dramatic deletion.
 
+### Legacy URL Decision
+
+For the first implementation pass, keep these URLs live but remove them from primary navigation, homepage hero routing, and top-level CTA flows:
+
+- `listings.htm`
+- `platform.htm`
+- `listing-points2perks.htm`
+- `listing-tourist-aid.htm`
+- `listing-persona-album.htm`
+- `listing-sign-language-chat.htm`
+- `listing-dashing-robo.htm`
+- `main.html`
+
+Recommended first-pass treatment:
+
+1. leave the files in place
+2. remove them from primary navigation
+3. stop using them as the main homepage story
+4. if needed, surface them only in a small secondary legacy / projects / archive context
+
+Do not delete these files in the repositioning pass unless the implementing agent confirms that removing them will not break live site expectations.
+
 ## Page-Level Implementation Instructions
 
 ### `index.html`
@@ -176,7 +208,7 @@ Required changes:
 - replace marketplace-first hero with Andrew-led advisory hero
 - remove AI marketplace as the lead identity
 - add a clear statement of who Andrew helps
-- add `OpenFor member` language if approved for public use
+- add `OpenFor member` language directly
 - add a concrete service wedge block for virtual marking
 - add founder-facing service and guidance blocks
 - route toward strategy pages, commercialization, founder proof, and contact
@@ -193,7 +225,7 @@ Required changes:
 
 - make Andrew central, not incidental
 - make the `patent agent turned entrepreneur` framing explicit
-- make `OpenFor member` context explicit if true
+- make `OpenFor member` context explicit
 - describe what W&Patent now does in practical founder terms
 - tie Andrew, W&Patent, patent strategy, commercialization, and founder articulation into one legible story
 
@@ -239,16 +271,19 @@ Do not bury them behind marketplace language.
 
 ### New / Reframed Service Surface
 
-Create or repurpose one page as a concrete services or offers surface.
+Create `services.htm` as the canonical services or offers surface.
 
-At minimum, this surface should cover:
+Primary nav should point to this page.
+
+At minimum, `services.htm` should cover:
 
 - startup patent strategy advisory
 - commercialization framing
 - founder articulation / clarity support
 - virtual marking support
 
-If the existing site structure makes this easier through a rewritten legacy page, that is acceptable.
+Do not make `platform.htm` the primary services destination in the first pass.
+If useful, `platform.htm` may remain live as a secondary legacy page, but `services.htm` should become the canonical advisory services URL.
 
 ### Virtual Marking
 
@@ -359,11 +394,13 @@ Important:
 
 ## Relationship To Existing Content Handoffs
 
-There is already a W&Patent trilogy handoff in:
+There may be an older W&Patent trilogy handoff in a local working copy:
 
 - `outputs/handoffs/2026-06-06-publish-blog-trilogy-wpatent.md`
 
-Treat that trilogy as compatible but secondary.
+Do not depend on that file for the reposition implementation.
+If it exists locally, treat it as optional follow-on content context only.
+If it is absent, proceed with this reposition brief alone.
 
 If those pages are implemented after the reposition, normalize their tone to the new house voice:
 
@@ -427,4 +464,3 @@ For this change, the first expected wins are:
 - `founders/wpatent/roadmap.md`
 - `founders/wpatent/proof-network.md`
 - `founders/wpatent/external-signals.md`
-
