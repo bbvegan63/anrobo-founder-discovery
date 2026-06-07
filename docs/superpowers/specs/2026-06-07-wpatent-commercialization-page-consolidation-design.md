@@ -24,6 +24,24 @@ Retire it using the same careful helper-URL pattern already used for the older A
 - point it canonically at the strategy guide
 - keep a lightweight redirect / fallback page rather than a dead removal
 
+## Sequencing Rule
+
+Do not execute this consolidation in the middle of the current draft-promotion signal loop.
+
+Required order:
+
+1. complete the current signal-loop wave built around:
+   - `startup-patent-strategy.htm`
+   - the first queue-promoted support page
+   - the associated post-publish measurement checkpoint
+2. only after that measurement read should the commercialization-page consolidation begin
+
+Reason:
+
+- changing page structure in the middle of the current publication cycle would create link churn
+- it would blur attribution for the first draft-promotion measurement
+- it would make the current support-page promotion sequence harder to interpret
+
 ## Why This Exists
 
 W&Patent has already moved toward:
@@ -106,6 +124,27 @@ The commercialization material should become a stronger middle/later section of 
 That is enough for service framing.
 It does not need to become a long commercialization explainer.
 
+## Link Migration Map
+
+The consolidation should not use a vague "point everything to the strategy page" rule.
+Each current link context needs an explicit replacement.
+
+| Current location | Current role | New target / treatment |
+| --- | --- | --- |
+| `index.html` | old commercialization service-card route | remove the standalone commercialization route; keep homepage focused on `startup-patent-strategy.htm` and `services.htm` only |
+| `about.htm` | founder-proof card mentioning commercialization framing | keep the commercialization idea in copy if still useful, but route readers to `startup-patent-strategy.htm` rather than a standalone commercialization page |
+| `services.htm` | service-range explanation | keep commercialization as a short service concept inside `services.htm`; do not route out to a standalone commercialization guide unless a later explicit decision restores one |
+| `why_us.htm` | comparison/support card | rewrite the commercialization card so it points to `startup-patent-strategy.htm` as the stronger strategy anchor |
+| `startup-patent-strategy.htm` | internal support link | absorb the strongest commercialization logic into this page directly; remove the dependency on the standalone commercialization URL |
+| `andrew-leung-startup-patent-strategy.htm` | retired helper URL | no new commercialization destination needed; if any fallback copy still mentions the old page, point to `startup-patent-strategy.htm` |
+| `patent-strategy-open-licensing.htm` | related support note | rewrite the commercialization reference so the related reading path points to `startup-patent-strategy.htm`, not the retired commercialization page |
+
+The general rule is:
+
+- service-context links stay inside `services.htm` or route to the strategy anchor
+- strategy-context links route to `startup-patent-strategy.htm`
+- no page should keep presenting the commercialization URL as required reading once this consolidation is complete
+
 ## Retirement Shape
 
 Retire `patent-commercialization-for-founders.htm` using a helper-URL pattern:
@@ -156,11 +195,32 @@ Update at minimum:
 
 ### Measurement logic
 
-Make an explicit decision about whether `patent commercialization for founders` remains in the prompt pack.
+Remove `patent commercialization for founders` from the core W&Patent owned-topic prompt pack when this consolidation executes.
 
-If W&Patent is no longer trying to own commercialization as a primary topic, the cleaner move is to de-prioritize or remove that prompt from the core owned-topic measurement set.
+Reason:
 
-Keeping the prompt while removing the page is possible, but it means accepting weaker performance on a topic the site no longer directly targets.
+- once the standalone page is retired, W&Patent is no longer claiming commercialization as a primary owned topic
+- keeping that prompt in the core pack would add recurring noise to future measurement runs
+- weaker retrieval on a deliberately de-prioritized topic would not be a useful failure signal
+
+If commercialization is still worth tracking at all, it should move to a secondary comparison/control set rather than remain in the primary owned-topic prompts.
+
+## Expected Final Test State
+
+The retired commercialization URL should still be tested, but as a helper URL rather than a full topic-owning page.
+
+Expected final test posture:
+
+- `tests/shared-shell.test.mjs`
+  - keep the retired page in the shared-shell coverage only if the helper URL still serves the normal shell assets
+- `tests/discovery.test.mjs`
+  - remove the commercialization page from the sitemap expectation because it should no longer be listed as a public primary page
+- `tests/support-pages.test.mjs`
+  - replace the current heavy commercialization-page assertions with a smaller retired-URL helper test that verifies:
+    - canonical to `startup-patent-strategy.htm`
+    - refresh to `startup-patent-strategy.htm`
+    - short fallback copy explaining the consolidation
+    - no heavyweight `FAQPage` topic-owning schema
 
 ## Recommendation
 
