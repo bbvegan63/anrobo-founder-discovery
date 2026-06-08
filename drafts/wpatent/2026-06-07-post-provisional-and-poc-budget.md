@@ -26,6 +26,12 @@ positioning:
     competitor took it. File a narrow provisional on that one thing ($60).
     Then use the provisional year to learn whether that thing is actually
     your moat. The cost of not filing is now higher than the cost of filing.
+    
+    Key additions: "Every Dollar Does Two Jobs" — each expenditure should
+    serve dual purpose (build+capture, protect+enable, earn+signal).
+    "Launch Freely, Hold the One Thing" — the old harsh disclosure rule is
+    replaced with aligned guidance: launch everything except the enabling
+    piece. That piece hold close. Everything else is conversation.
 ---
 
 Title: **You Do Both**
@@ -59,6 +65,14 @@ That is wrong. The provisional is part of the build. Your engineer is already ma
 
 **The cost of a provisional is not the $60 filing fee. It is the cognitive load of describing your invention clearly. Your engineer is already doing that work during POC. You are not adding a separate expense. You are capturing the same work in two forms.**
 
+## Every Dollar Does Two Jobs
+
+When capital is limited, every dollar should serve dual purpose.
+
+The engineering dollar builds the product *and* captures novelty for the provisional. The provisional dollar protects the one thing *and* enables conversation with customers and investors. The launch dollar generates revenue *and* produces market signal for claim refinement.
+
+No dollar does one thing only. If you are spending on something that only builds, only protects, or only sells, you are allocating for a model that no longer exists.
+
 ## The Signal-Based Timeline
 
 The real question is not "when can I afford to file?" It is "what do I need to know before I file, and how do I learn that without losing the ability to file at all?"
@@ -71,6 +85,16 @@ Week 4–52: Talk to customers, iterate, learn whether it matters
 Before PCT deadline: File broadly if you have signal, or abandon if you don't
 
 This is not parallel execution to save money. It is parallel execution to preserve optionality.
+
+## Launch Freely, Hold the One Thing
+
+No Product Hunt launch? No Show HN? No conference demos? No press?
+
+That advice was built for a world where you filed *after* you launched. Now you file before — on the one thing that matters.
+
+So launch. Demo. Pitch. Post. Share everything except the enabling piece.
+
+**That piece hold close to your chest. Everything else is conversation — including your launch.**
 
 ## The One-Paragraph Takeaway
 
