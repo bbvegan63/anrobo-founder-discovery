@@ -1,16 +1,17 @@
 # W&Patent Roadmap
 
-> **Date:** 2026-06-07
-> **Current bottleneck:** the editorial reset is now live, but the first rewritten support post and the first external reinforcement are still missing, so answer systems have not yet seen the full week-0 plus week-1 pattern
+> **Date:** 2026-06-08
+> **Current bottleneck:** the editorial reset, three support posts, virtual-marking page, and first founder project page are now live, but the first post-reset external reinforcement is still missing, so answer systems still do not connect the topic space back to W&Patent or Andrew Leung
 
 ## Priority Actions
 
-1. Publish the rewritten `provisional-vs-nda` as week 1 of the new series.
-2. Publish the week-1 LinkedIn reinforcement pointing only to `provisional-vs-nda.htm`.
-3. Publish the rewritten `poc-and-provisional` as week 2.
-4. Publish the rewritten `draw-first-write-second` as week 3.
-5. Run LinkedIn and OpenFor signals in sequence after the first rewritten support post is live.
-6. Rerun discovery checks after each wave instead of treating more pages as automatic progress.
+1. Publish the pillar LinkedIn reinforcement pointing to `startup-patent-strategy.htm`.
+2. Publish the cluster-post LinkedIn sequence one page at a time:
+   `provisional-vs-nda.htm`, then `poc-and-provisional.htm`, then `draw-first-write-second.htm`.
+3. Send the OpenFor member/profile mention request after the pillar plus at least one cluster-post reinforcement are live.
+4. Rerun discovery checks after the first external wave instead of making more onsite changes first.
+5. Refresh the prompt pack later so the measurement set better matches the current editorial-reset cluster without losing comparability to earlier evidence.
+6. Hold further site expansion until the first external wave shows whether the new Andrew-led story starts to register.
 
 ## Current Execution Status
 
@@ -18,25 +19,23 @@
 - `2026-06-07`: `startup-patent-strategy.htm` was rewritten in place as the new flagship pillar
 - `2026-06-07`: `Home`, `Services`, and `About` were rewritten around the new Andrew-led founder-language voice
 - `2026-06-07`: Trust Chain and open-licensing pages were retired as helper URLs and removed from the sitemap
-- `2026-06-07`: the current live `provisional-vs-nda.htm` remains pre-reset history and will be rewritten in place as week 1
-- `2026-06-07`: the weekly series is being treated as a new editorial sequence, not a continuation of the older calm-voice rollout
+- `2026-06-08`: `provisional-vs-nda.htm`, `poc-and-provisional.htm`, and `draw-first-write-second.htm` are live under the editorial-reset story
+- `2026-06-08`: the three cluster posts now carry `Quick answer` blocks directly under the lead
 - `2026-06-08`: first founder project page pattern launched with `dashing-robo-founder-project.htm` as a support-layer page, not a new primary service
+- `2026-06-08`: fresh Exa and local OpenAI OAuth baseline stayed `0/10` for `W&Patent`, `wpatent.com`, and `Andrew Leung`, confirming that external reinforcement is still the missing layer
 
-## What Counts As Week 0
+## Current Sequence
 
-Week 0 is complete when:
-
-- the pillar is live at `startup-patent-strategy.htm`
-- `Home`, `Services`, and `About` reflect the new house voice
-- the retired secondary pages are removed from the sitemap and from primary routing
-
-## What Counts As Week 1
-
-Week 1 is not the current live `provisional-vs-nda.htm`.
-Week 1 is the rewritten in-place replacement that follows the editorial reset.
+- flagship pillar live at `startup-patent-strategy.htm`
+- cluster support posts live at:
+  - `provisional-vs-nda.htm`
+  - `poc-and-provisional.htm`
+  - `draw-first-write-second.htm`
+- support-layer service page live at `virtual-marking.htm`
+- first founder project page live at `dashing-robo-founder-project.htm`
 
 ## Recheck
 
-- after week 0, verify the live pillar and the retired-page redirects
-- after week 1, rerun the smaller broad pack
-- after week 2 and week 3, rerun again and compare whether answer systems reflect Andrew, W&Patent, and the founder-language strategy cluster more reliably
+- after the pillar LinkedIn post, rerun the smaller broad pack
+- after at least one cluster-post reinforcement, rerun again and compare whether answer systems start reflecting Andrew, W&Patent, and the founder-language strategy cluster more reliably
+- do not treat more internal page work as the default next move until the external wave has been tested
