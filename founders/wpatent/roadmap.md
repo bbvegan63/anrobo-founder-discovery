@@ -7,7 +7,7 @@
 
 1. Publish the rewritten `provisional-vs-nda` as week 1 of the new series.
 2. Publish the week-1 LinkedIn reinforcement pointing only to `provisional-vs-nda.htm`.
-3. Publish the rewritten `provisional-and-poc-budget` as week 2.
+3. Publish the rewritten `poc-and-provisional` as week 2.
 4. Publish the rewritten `draw-first-write-second` as week 3.
 5. Run LinkedIn and OpenFor signals in sequence after the first rewritten support post is live.
 6. Rerun discovery checks after each wave instead of treating more pages as automatic progress.

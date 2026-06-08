@@ -8,7 +8,7 @@ Use:
 
 Examples:
 
-- `drafts/wpatent/2026-06-06-post-provisional-vs-nda.md`
+- `drafts/example-founder/2026-06-08-post-example-topic.md`
 - `drafts/openfor/2026-06-06-post-solo-founder-ai.md`
 
 Use this folder for:

@@ -23,7 +23,7 @@
 
 - rewritten pillar at `startup-patent-strategy.htm`
 - rewritten week-1 `provisional-vs-nda.htm`
-- rewritten week-2 `provisional-and-poc-budget.htm`
+- rewritten week-2 `poc-and-provisional.htm`
 - rewritten week-3 `draw-first-write-second.htm`
 
 ## Retired Proof Surfaces

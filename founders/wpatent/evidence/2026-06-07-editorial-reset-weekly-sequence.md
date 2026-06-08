@@ -13,7 +13,7 @@
 
 ## Week 2
 
-- rewritten `provisional-and-poc-budget.htm`
+- rewritten `poc-and-provisional.htm`
 - rerun the smaller broad pack after publish
 
 ## Week 3
