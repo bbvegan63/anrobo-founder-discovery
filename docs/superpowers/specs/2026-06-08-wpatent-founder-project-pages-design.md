@@ -11,7 +11,7 @@ Its active public intent is:
 - practical patent advice for founders
 - Andrew Leung as the visible founder-facing voice
 - support for OpenFor cohort founders and the broader founder public
-- one small concrete service wedge: virtual marking
+- the clearest concrete service wedge: virtual marking
 
 The older W&Patent site included a five-item startup and patent listings surface:
 
