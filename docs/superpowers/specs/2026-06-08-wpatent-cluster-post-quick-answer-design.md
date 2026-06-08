@@ -33,6 +33,11 @@ Apply this pattern to the three cluster posts:
 - `https://wpatent.com/poc-and-provisional.htm`
 - `https://wpatent.com/draw-first-write-second.htm`
 
+For clarity:
+
+- `https://wpatent.com/poc-and-provisional.htm` is the active canonical week-2 URL
+- `https://wpatent.com/provisional-and-poc-budget.htm` is only a retired helper redirect
+
 Mirror the same content in the approved source assets under `outputs/publishing/`, not the now-obsolete `drafts/wpatent/` layer.
 
 ## Content Pattern
@@ -75,17 +80,17 @@ The `Quick answer` should clarify:
 
 The `Quick answer` should clarify:
 
-- this is no longer a pure sequential choice
-- many founders should build and file in parallel
-- the real task is capturing technically distinctive work while the evidence is fresh
+- a better provisional is grounded in what actually works in practice
+- the founder should use the same build work to strengthen the filing and the filing to protect the launch
+- the launch dollar can do two jobs: revenue now and signal for the later filing decision
 
 ### Draw First, Write Second
 
 The `Quick answer` should clarify:
 
-- drawings help prove possession
-- drawings create fallback support if claims need to narrow later
-- text alone is often a weaker starting position
+- AI can generate draft text, but it will not draw the founder's exit strategy
+- drawings are evidence of possession and a practical fallback if claims need to narrow later
+- text alone is often a weaker starting position because it gives fewer retreat paths
 
 ## Readability Guardrails
 
