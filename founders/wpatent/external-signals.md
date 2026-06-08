@@ -1,29 +1,33 @@
 # W&Patent External Signals
 
-> **Version:** 2026-05-19
-> **Purpose:** Track offsite distribution and response signals that support W&Patent founder discovery
+> **Version:** 2026-06-07
+> **Purpose:** Track the post-reset offsite sequence for the new W&Patent editorial story
 
 ## Current Log
 
 | Signal ID | Asset | Channel | Visibility | Status | Response Status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| `extsig-001` | `asset-001` | LinkedIn founder post | Public | Sent / live | Low positive | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder post was published. Included in mixed-mode share packet `asset-001--2026-05-19T00-00-00Z`. Current response: `2` likes and no comments. |
-| `extsig-002` | `asset-001` | founder list intro note | Private | Sent | Imported feedback | Migrated from the older W&Patent proof-flow workspace after manual confirmation that the founder-list send went out. Included in mixed-mode share packet `asset-001--2026-05-19T00-00-00Z`. Current response: one founder asked whether there are also anti-patent or open-license strategies such as Creative Commons, Apache, and GPL. |
+| `extsig-001` | `asset-001` | LinkedIn founder post | Public | Sent / live | Low positive | Pre-reset signal imported from the earlier W&Patent proof-flow workspace. Useful as history only, not as part of the new editorial sequence. |
+| `extsig-002` | `asset-001` | founder list intro note | Private | Sent | Imported feedback | Pre-reset signal imported from the earlier W&Patent proof-flow workspace. Useful as history only, not as part of the new editorial sequence. |
 
-## Source Asset
+## Reset Sequence
 
-- onsite case note: `startup-patent-strategy-case-note.htm`
-- linked page: `startup-patent-strategy.htm`
-
-## Mixed-Mode Pilot
-
-- share packet: `sync/outbox/asset-001-share.json`
-- community sync id: `asset-001--2026-05-19T00-00-00Z`
-- shared workspace status: applied to `community/workspace.json`
-- feedback import status: first founder-list feedback packet imported from `sync/inbox/feedback-asset-001-founder-list-question.json` into `evidence/imported-feedback/feedback-asset-001-founder-list-question.json`
+- `asset-003` = rewritten pillar launch around `startup-patent-strategy.htm`
+- `asset-004` = rewritten week-1 `provisional-vs-nda`
+- first LinkedIn reinforcement points only to `startup-patent-strategy.htm`
+- second LinkedIn reinforcement points to the rewritten `provisional-vs-nda.htm`
+- first OpenFor ask happens only after the new pillar plus at least one rewritten support post are live
 
 ## Reading Rule
 
-These entries track the external layer around `asset-001`, not the onsite source asset itself.
-Follow-up replies, intros, reposts, or later evidence changes should be appended here or reflected in the next structured evidence refresh.
-Selected shared-layer feedback can also be imported into `evidence/imported-feedback/` when mixed-mode sync is used.
+Judge the reset sequence in order:
+
+1. pillar goes live
+2. first LinkedIn post reinforces the pillar
+3. week-1 post goes live
+4. second LinkedIn post reinforces week 1
+5. OpenFor ask is sent
+6. rerun measurement
+
+Do not treat the older signal rows as active proof for the reset.
+They are context, not the current sequence.

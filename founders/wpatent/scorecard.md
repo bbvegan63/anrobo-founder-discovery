@@ -1,17 +1,17 @@
 # W&Patent Scorecard
 
-> **Version:** 2026-06-06
-> **Role:** Primary founder-discovery working example
+> **Version:** 2026-06-07
+> **Role:** Editorial reset active baseline
 
 ## Summary Dashboard
 
 | Category | Weight | Working Score | Evidence Base | Read |
 | --- | --- | --- | --- | --- |
-| Identity Surface Score | 20 | 15/20 | site pages, schema, founder attribution | Strong |
-| Broad Discovery Score | 20 | 2/20 | `2026-06-06` Exa-only rerun plus standalone local OpenAI OAuth diagnostic | First Exa citation foothold exists, but generic discovery is still weak |
-| Branded Grounding Score | 20 | 5/20 | `2026-05-19` branded control evidence | Earlier weak framing exists, but the production rerun is still Perplexity-blocked |
-| Intent Fit Score | 20 | 15/20 | site structure and topic clustering | Stronger than retrieval |
-| Improvement Readiness Score | 20 | 18/20 | page, proof, cleaner repo boundary, roadmap clarity, standalone local OAuth diagnostic lane | High, but production comparison is still partially blocked |
+| Identity Surface Score | 20 | 16/20 | Andrew-led live shell, strong strategy URL, founder/company naming already present | Strong |
+| Broad Discovery Score | 20 | 1/20 | `2026-06-06` and `2026-06-07` broad-pack reruns | Still flat |
+| Branded Grounding Score | 20 | 5/20 | earlier branded-control evidence plus current founder/site structure | Weak but not broken |
+| Intent Fit Score | 20 | 15/20 | startup patent strategy, early decisions, budget cluster, virtual marking support | Good if the new pillar lands well |
+| Improvement Readiness Score | 20 | 18/20 | rewritten pillar, weekly series, smaller site, clearer external signal order | High |
 
 **Working total:** `55/100`
 
@@ -19,17 +19,27 @@
 
 | Tier | Prompts | Mentioned | `wpatent.com` Cited | `Andrew Leung` Named |
 | --- | --- | --- | --- | --- |
-| Broad discovery fixed pack (`exa_answer`, `2026-06-06`) | 10 | 0/10 | 1/10 | 0/10 |
-| Broad diagnostic (`openai_local_oauth`, `2026-06-06`) | 10 | 0/10 | 0/10 | 0/10 |
-| Branded control rerun | pending `PERPLEXITY_API_KEY` restore | - | - | - |
+| Broad discovery fixed pack (`exa_answer`, latest saved reads) | 10 | 0/10 | 0-1/10 | 0/10 |
+| Broad diagnostic (`openai_local_oauth`, latest saved reads) | 10 | 0/10 | 0/10 | 0/10 |
+| Editorial reset sequence | pillar + weekly series not yet launched | - | - | - |
+| External reinforcement | LinkedIn / OpenFor reset sequence not yet live | - | - | - |
 
 ## Current Read
 
-The June 6 Exa rerun is the first saved broad-pack evidence that a live W&Patent page was cited without a branded prompt.
-The win is narrow: `startup-patent-strategy.htm` was cited once for `patent strategy for startups`, but no run produced direct `W&Patent` naming or `Andrew Leung` naming.
+The editorial reset starts from a better editorial direction, not from a better retrieval result.
 
-The standalone local OpenAI OAuth diagnostic lane now works cleanly through the desktop-app Codex binary, but its ten-answer batch still stayed generic and did not cite W&Patent.
-`trust chain for websites` also continued to resolve to TLS / certificate-chain language.
+The current live site already has:
 
-This score refresh should therefore be treated as a meaningful but limited improvement in broad discovery, not a full production recovery.
-The next decision should wait for the restored Perplexity benchmark rather than defaulting immediately to another internal content asset.
+- Andrew-led framing
+- a simplified top-level path
+- a strategy anchor that answer engines can theoretically learn
+
+But the saved broad-pack evidence is still weak.
+The June 6 and June 7 reads did not show reliable `W&Patent`, `wpatent.com`, or `Andrew Leung` naming on open prompts.
+
+This means the editorial reset should be judged as:
+
+- a fresh strategy for improving discovery
+- not proof that discovery has already improved
+
+The key test is whether a sharper pillar plus a coherent weekly founder-language series creates a more repeatable Andrew -> W&Patent -> startup patent strategy pattern than the earlier calmer rollout did.

@@ -1,54 +1,42 @@
 # W&Patent Roadmap
 
 > **Date:** 2026-06-07
-> **Current bottleneck:** the June 7 Andrew-led simplification, first follow-on page, and commercialization-page consolidation are live, but the first-wave signal loop is still incomplete because the Andrew LinkedIn reinforcement is not yet live; the immediate post-article rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane for W&Patent naming, `wpatent.com` citation, and Andrew naming
+> **Current bottleneck:** the current live W&Patent story is still split across old support surfaces and a calmer strategy voice; the editorial reset needs to replace that story before new measurement has any chance of being clean
 
 ## Priority Actions
 
-1. Publish the Andrew LinkedIn reinforcement for `startup-patent-strategy.htm`, or explicitly waive that channel and record the decision.
-2. After the external reinforcement decision, rerun the Exa broad pack and the local OAuth diagnostic lane again from founder-discovery and compare them against the immediate June 7 post-article check.
-3. Restore `PERPLEXITY_API_KEY` inside `anrobo-founder-discovery/.env.local`, then rerun `node --env-file=.env.local scripts/run-prompt-evidence.mjs --include-exa`.
-4. Rerun the core owned-topic pack without the commercialization prompt and compare whether the smaller topic set improves signal clarity around startup patent strategy, founder authority, and Trust Chain.
-5. Hold off on promoting the next W&Patent draft until the article-plus-anchor wave has a settled measurement read.
-6. If the post-reinforcement compare remains narrow, shift the next build toward external founder proof and citation signals, then log them in `external-signals.md`.
+1. Publish the rewritten pillar in place at `startup-patent-strategy.htm`.
+2. Rewrite the top-level site around the new Andrew-led founder-language voice.
+3. Retire older strategy-secondary pages that no longer serve the reset.
+4. Publish the rewritten `provisional-vs-nda` as week 1 of the new series.
+5. Publish the rewritten `provisional-and-poc-budget` as week 2.
+6. Publish the rewritten `draw-first-write-second` as week 3.
+7. Run LinkedIn and OpenFor signals in sequence after the new pillar-led story is live.
+8. Rerun discovery checks after each wave instead of treating more pages as automatic progress.
 
 ## Current Execution Status
 
-- `2026-05-20`: draft proof-note brief saved to `outputs/publishing/2026-05-20-proof-note-wpatent-defensibility-choice.md`
-- `2026-05-20`: site-repo implementation committed in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `26fd29a`, adding `patent-strategy-open-licensing.htm` and linking it back to `startup-patent-strategy.htm`
-- `2026-05-20`: live page verified at `https://wpatent.com/patent-strategy-open-licensing.htm`; publish check saved to `founders/wpatent/evidence/2026-05-20-defensibility-proof-note-publish.md`
-- `2026-05-20`: boundary cleanup completed; site repo pushed as `8463e78`, and discovery ops absorbed into founder-discovery at `598328a`
-- `2026-05-20`: local provider env moved out of the site repo and into `anrobo-founder-discovery/.env.local`
-- `2026-05-20`: Exa broad rerun completed from founder-discovery; result stayed `0/10` for `W&Patent` mention, `wpatent.com` citation, and `Andrew Leung` naming; see `founders/wpatent/evidence/2026-05-20-exa-broad-rerun-after-boundary-cleanup.md`
-- `2026-05-20`: new founder-authority page implemented in `/Users/andrew/backup/work/github/hmc62843u.github.io` at `andrew-leung-startup-patent-strategy.htm`, linking Andrew Leung, W&Patent, startup patent strategy, and patent commercialization in one direct citation surface
-- `2026-05-20`: post-founder-authority Exa-only rerun stayed `0/10`, and the manual local OpenAI OAuth broad loop stayed `0/8` on structured answers; see `founders/wpatent/evidence/2026-05-20-broad-rerun-after-founder-authority-page.md`
-- `2026-05-20`: core answer-block tightening implemented in `/Users/andrew/backup/work/github/hmc62843u.github.io` as `cbf2dc8`, adding explicit `W&Patent's Direct Answer` and `Andrew Leung's Direct Answer` sections to `startup-patent-strategy.htm` and `patent-commercialization-for-founders.htm`; see `founders/wpatent/evidence/2026-05-20-core-answer-block-tightening.md`
-- `2026-06-06`: Exa broad rerun produced the first broad-pack `wpatent.com` citation on `patent strategy for startups`, pointing to `https://wpatent.com/startup-patent-strategy.htm`; see `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
-- `2026-06-06`: the local OpenAI OAuth lane was separated into a clean standalone command with `--only-openai-local-oauth`, rerun on the desktop-app Codex binary, and stayed `0/10` on W&Patent, site citation, and Andrew naming; see `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
-- `2026-06-07`: founder-advisory reposition implemented, pushed, and verified live from `/Users/andrew/backup/work/github/hmc62843u.github.io` as `1df4e5b`; the live homepage now centers Andrew Leung, OpenFor member context, and founder patent strategy / commercialization; see `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
-- `2026-06-07`: soft-minimal redesign pushed as `859293c`, reducing the main visitor path to `Home`, `Strategy`, `Services`, and `About` while keeping the support layer live underneath
-- `2026-06-07`: founder authority consolidated into `startup-patent-strategy.htm` and the older founder-signature URL retired into a canonicalized redirect page as `4d5912a`; see `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
-- `2026-06-07`: `provisional-vs-nda.htm` is live as the first promoted follow-on support page; immediate rerun stayed `0/10` on Exa and `0/10` on the local OAuth lane, and the first-wave LinkedIn reinforcement still was not logged as live; see `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
-- `2026-06-07`: standalone commercialization page retired into a helper URL, with its strongest business-leverage logic consolidated into `startup-patent-strategy.htm`; see `founders/wpatent/evidence/2026-06-07-commercialization-page-consolidation.md`
-- current blocker: `PERPLEXITY_API_KEY` is still empty in `anrobo-founder-discovery/.env.local`
-- next evidence step: complete or explicitly waive the first-wave LinkedIn reinforcement, rerun the smaller broad pack after that choice has had time to propagate, restore that key, rerun the production benchmark with `--include-exa`, and compare it against the June 6 and immediate June 7 baselines
+- `2026-06-07`: editorial reset adopted as the new active operating story
+- `2026-06-07`: `startup-patent-strategy.htm` is being replaced in place, not retired
+- `2026-06-07`: the current live `provisional-vs-nda.htm` is now pre-reset history and will be rewritten in place as week 1
+- `2026-06-07`: Trust Chain and open-licensing pages are no longer assumed to stay active public destinations
+- `2026-06-07`: the weekly series is being treated as a new editorial sequence, not a continuation of the older calm-voice rollout
+
+## What Counts As Week 0
+
+Week 0 is complete only when:
+
+- the pillar is live at `startup-patent-strategy.htm`
+- `Home`, `Services`, and `About` reflect the new house voice
+- the retired secondary pages are removed from the sitemap and from primary routing
+
+## What Counts As Week 1
+
+Week 1 is not the current live `provisional-vs-nda.htm`.
+Week 1 is the rewritten in-place replacement that follows the editorial reset.
 
 ## Recheck
 
-- rerun the 10-prompt broad pack
-- check whether the June 7 simplified Andrew-led path changes branded/entity retrieval
-- rerun branded control prompts once the Perplexity compare is restored
-- check whether `startup-patent-strategy.htm` keeps or improves its Exa citation foothold
-- compare whether any provider now adds direct `W&Patent`, `Andrew Leung`, or OpenFor-linked identity naming
-
-## Agent Note
-
-For the current evidence-led execution order, read:
-
-- `founders/wpatent/evidence/2026-05-19-next-moves.md`
-- `founders/wpatent/evidence/2026-05-20-next-agent-session-recommendation.md`
-- `founders/wpatent/evidence/2026-06-06-broad-rerun-after-propagation.md`
-- `founders/wpatent/evidence/2026-06-07-founder-advisory-reposition-publish.md`
-- `founders/wpatent/evidence/2026-06-07-soft-minimal-redesign-and-authority-consolidation.md`
-- `founders/wpatent/evidence/2026-06-07-post-provisional-vs-nda-immediate-rerun.md`
-- `founders/wpatent/evidence/2026-06-07-commercialization-page-consolidation.md`
+- after week 0, verify the live pillar and the retired-page redirects
+- after week 1, rerun the smaller broad pack
+- after week 2 and week 3, rerun again and compare whether answer systems reflect Andrew, W&Patent, and the founder-language strategy cluster more reliably
