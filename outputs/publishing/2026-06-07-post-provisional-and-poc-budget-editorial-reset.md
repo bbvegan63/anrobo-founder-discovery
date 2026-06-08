@@ -1,8 +1,12 @@
-# AI Collapsed The Quiet Period. Your Timeline Just Shrunk.
+# POC And Provisional For Founders
 
 *Human Authored · AI Assisted*
 
-Part of Andrew Leung's startup patent strategy series at W&Patent. Start with the flagship guide for the broader founder lens.
+Part of Andrew Leung's startup patent strategy series at W&Patent. Canonical live URL: `https://wpatent.com/poc-and-provisional.htm`.
+
+## Quick answer
+
+POC and provisional for founders: use the same build work to strengthen the filing and use the filing to protect the launch. A better provisional is grounded in what actually works, and the launch dollar can do two jobs: revenue now and signal for the later filing decision.
 
 ## The Old Build-Then-File Default
 

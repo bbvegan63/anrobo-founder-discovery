@@ -4,6 +4,10 @@
 
 Part of Andrew Leung's startup patent strategy series at W&Patent. Read the flagship guide first for the broader founder framework.
 
+## Quick answer
+
+Draw first, write second for founders: AI can draft text, but it will not draw your exit strategy. Clear drawings show possession and give you fallback support if claims need to narrow later, which plain text often does not.
+
 ## Possession Comes First
 
 Founders are often told to focus on writing a detailed description.

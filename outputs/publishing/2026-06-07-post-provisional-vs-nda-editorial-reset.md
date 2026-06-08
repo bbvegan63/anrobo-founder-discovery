@@ -4,6 +4,10 @@
 
 Part of Andrew Leung's startup patent strategy series at W&Patent. Start with the flagship guide if you have not read it yet.
 
+## Quick answer
+
+Provisional vs. NDA for founders: file first on the one enabling piece that matters, then talk with judgment. An NDA can help in narrower relationship contexts, but it is not your moat and it does not preserve the same filing optionality.
+
 ## VCs Don't Sign NDAs
 
 Founders waste too much time trying to solve the wrong first problem.
