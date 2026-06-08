@@ -1,108 +1,79 @@
-*Human Authored · AI Assisted*
-
-*This is part of a series on startup patent strategy. For the full framework, start with the [Startup Patent Strategy Pillar](2026-06-06-pillar-startup-patent-strategy.md), then read [Draw First. Write Second. Claim Third.](2026-06-06-post-draw-first-write-second.md) and [Provisional + POC on a Limited Budget](2026-06-06-post-provisional-and-poc-budget.md).*
-
+---
+positioning:
+  series: "Startup Patent Strategy"
+  series_order: 1
+  pillar: "Patent Strategy, in Founder Language"
+  topic: "Pitching without disclosing enablement"
+  reframe: "Stop asking NDA or provisional. The strategic question is: what is your moat, what do you need to secure before you start asking people about it, and what can you talk about freely?"
+  core_line: "That piece hold close to your chest. Everything else is conversation."
+  what_it_replaces: "Provisional vs NDA: Why the $60 Filing Beats the NDA Every Time (tactical tool comparison)"
+  strategic_shift:
+    old_question: "Should I get an NDA or file a provisional?"
+    new_question: "What do I need to secure before I start talking — and what can I talk about freely?"
+    old_answer: "File the provisional first, then pitch freely. The $60 filing beats the NDA."
+    new_answer: "Know what to say and what not to say. The strategic founder talks openly about context, market, approach — but holds back the one enabling piece that would let a competitor replicate the core. That piece gets a provisional. Everything else is conversation."
+  connected_posts:
+    - "You Do Both" (post 2) — POC and provisional are not a choice anymore
+    - "Draw First, Write Second, Claim Third" (post 3) — possession and drafting
+  statutory_references:
+    - "35 U.S.C. § 111(b) — provisional requires only specification and drawings"
+    - "35 U.S.C. § 119(e) — priority date weight for disclosed subject matter"
+    - "MPEP 201.04 — low bar confirms: no claims, oaths, or examination needed"
+  for_agents: >
+    This post is about the strategic thinking behind pitching without disclosing
+    enablement. The core thesis: most founders either hide everything (NDAs)
+    or spill everything (excitement). Both signal they haven't figured out what
+    actually matters. The strategic founder protects one specific thing (the
+    enabling piece), then talks freely about everything else. The provisional
+    is a communication strategy, not a filing strategy. It removes the fear
+    that keeps founders from learning whether their moat is real.
 ---
 
-## NDAs won't save you. A provisional will.
+# Your Moat Is Not in an NDA
 
-Founders obsess over NDAs. They spend hours drafting them, negotiating them, worrying about who signed and who didn't.
+**Core thesis:** The strategic question is not "NDA or provisional?" It is "what is my moat, and what do I need to secure before I start asking people about it?"
 
-Meanwhile, the real tool for protecting your priority date costs $60 and takes an afternoon to file.
+## Key Sections
 
-You don't need an NDA to talk to investors. You need a provisional patent. Then you can talk to anyone.
+### Opening
+- Vibe coding. AI-generated designs. Automated patent drafts. Tactical work is now nearly free.
+- Founders still asking tactical questions — wrong level
+- The real question is moat
 
-## VCs don't sign NDAs. Stop asking.
+### The AI Era Collapsed the Tactical Window
+- Build times collapsed, copycat windows shrunk, expectations rose
+- Optimizing tool choices is not strategy
+- **The real question: what is your moat, and what do you need to secure before you start asking people about it?**
 
-VC firms don't sign NDAs for pitch meetings. It's not personal — they see hundreds of deals and can't negotiate confidentiality with every founder. Asking signals inexperience.
+### Strategic Thinking From a Patent Lens
+- A patent lens is not about filing. It is about knowing the difference between what is your moat and what is noise.
+- Most founders pitch one of two ways: hide everything behind NDAs, or spill everything. Both signal they haven't figured out what matters.
+- The strategic founder talks openly about context, market, approach, vision — but holds back the one enabling piece.
+- **That piece hold close to your chest. Everything else is conversation.**
+- A founder who knows what an investor does not need to hear has already done the work.
+- A single provisional covers that one thing. Then talk freely about everything else.
 
-| Ask | Response |
+### The Shift (table)
+
+| Tactical thinking | Strategic thinking |
 |---|---|
-| "Will you sign my NDA before I pitch?" | "We don't sign NDAs for meetings." |
-| "Can you at least keep this confidential?" | "We operate with discretion, but we can't sign." |
-| "What if I share technical details?" | "Then you've potentially disclosed without protection." |
+| "NDA or provisional?" | "What do I need to secure before I start talking?" |
+| "Is this patentable?" | "What part of this creates a real moat?" |
+| "How do I protect my idea?" | "How do I learn whether my idea is defensible?" |
+| "File everything to build a portfolio" | "Protect the one thing that makes you defensible" |
+| "Keep quiet until I have patents" | "File the minimum to enable conversation and discovery" |
 
-The founder who understands this doesn't fight the NDA battle. They file the provisional first and walk in without asking permission.
-
-## The US grace period is real — but it's not a strategy.
-
-US law gives you 12 months from public disclosure to file a patent application. So yes — you can pitch without an NDA, then file within a year.
-
-That does not make it a good idea.
-
-| Reality | What it means |
-|---|---|
-| You can file up to 12 months after disclosure | Your US rights survive (barely) |
-| You must prove the disclosure didn't enable prior art you didn't know about | Expensive litigation risk |
-| Your foreign rights are already dead | You lost Europe, China, Japan on day one |
-
-Relying on the grace period is like driving without insurance because the grace period is technically legal. It works until it doesn't.
-
-## Disclosure before filing kills foreign rights. Period.
-
-Europe has no grace period. Neither does China. Neither does Japan. Neither do most developed markets.
-
-| Country | Grace period | Pitch before filing? |
-|---|---|---|
-| United States | 12 months | Risky but possible |
-| Europe | None | Kills rights permanently |
-| China | None | Kills rights permanently |
-| Japan | None | Kills rights permanently |
-
-That investor pitch you gave without an NDA? If you hadn't filed yet, you just lost patent protection for your entire European and Asian market strategy. Permanently.
-
-## What an NDA actually does
-
-| Tool | Cost | What it protects | What it doesn't |
-|---|---|---|---|
-| NDA | Time (drafting + negotiation) | Someone's mouth | Foreign rights, copycats, independent invention |
-| Provisional patent | $60–$120 | Priority date worldwide (12 months) | Nothing — it's just a placeholder |
-| Both together | $60 + a conversation | Full optionality | — |
-
-The NDA creates a legal obligation to keep quiet. The provisional creates a legal right to claim priority. One is a restriction. The other is an asset.
-
-## File the provisional. Then pitch freely.
-
-Here's the workflow that costs less than dinner for two:
-
-| Day | Action | Cost |
-|---|---|---|
-| Friday morning | Write a 10-page description of what you built. Sketch diagrams. Name what's novel. | Your time (2 hours) |
-| Friday afternoon | File a provisional USPTO application via the electronic filing system | $60 (micro entity) |
-| Monday morning | Pitch to investors without NDAs. Talk freely. Answer detailed questions. | Nothing — you're protected |
-
-The provisional doesn't stop copycats. It doesn't let you sue. But it plants a flag that says: *I possessed this on that date.* No NDA can do that.
-
-## The $60 solution to a $100k problem.
-
-| Scenario | Outcome |
-|---|---|
-| Pitch without NDA, no filing | Foreign rights lost. US rights at risk. |
-| Pitch with NDA | Rare — most won't sign. |
-| File provisional ($60), then pitch | Full optionality. Pitch freely. Foreign rights preserved. |
-
-The cheapest solution is also the most effective one. Stop negotiating NDAs. Start filing.
-
-## Provisional isn't paranoia. It's optionality.
-
-Founders who file provisionals aren't hiding their idea. They're buying the freedom to talk openly.
-
-An NDA says: *"I don't trust you."* A provisional says: *"I trust myself. I've already done the work. Let's talk."*
-
-One closes doors. The other opens them.
-
----
+### The One-Paragraph Takeaway
+The strategic work is not choosing between an NDA and a provisional. It is knowing what makes you defensible, protecting that one thing, and then using the freedom to talk to learn whether your moat is real. That piece hold close to your chest. Everything else is conversation.
 
 ## Social Media Snippet
 
-> *"You don't need an NDA to talk to investors. You need a $60 provisional. Then you can talk to anyone."*
+> "Most founders pitch one of two ways: they hide everything behind NDAs, or they spill everything because they are excited. Both signal the same thing — they have not figured out what actually matters. The strategic founder talks openly about everything except the one enabling piece. That piece hold close to your chest. Everything else is conversation."
 >
 > — Andrew Leung, Patent Agent Turned Entrepreneur
-
----
 
 ## Warning & Disclaimer
 
 Human Authored · AI Assisted · Just being transparent
 
-The author is a registered patent agent and an entrepreneur. This article reflects personal professional experience and general educational information only. Nothing on this website constitutes legal advice nor creates an agent-client relationship. The views expressed are the author's own, based on professional experience with patent prosecution and startup tools. Patent laws vary by jurisdiction and change over time. For legal advice specific to your situation, consult a registered patent attorney.
+The author is a registered patent agent and an entrepreneur. This article reflects general educational information and professional judgment. Nothing on this website constitutes legal advice nor creates an agent-client relationship. Patent laws vary by jurisdiction and change over time. For legal advice specific to your situation, consult a registered patent attorney.
