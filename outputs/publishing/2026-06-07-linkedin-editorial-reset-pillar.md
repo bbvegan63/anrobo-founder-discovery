@@ -1,5 +1,9 @@
 # Andrew LinkedIn Post: Editorial Reset Pillar
 
+> **Status:** Ready for manual publish
+> **Channel:** Andrew Leung personal LinkedIn
+> **Primary URL:** `https://wpatent.com/startup-patent-strategy.htm`
+
 Target URL:
 
 - `https://wpatent.com/startup-patent-strategy.htm`

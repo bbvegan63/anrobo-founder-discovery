@@ -9,6 +9,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | `extsig-001` | `asset-001` | LinkedIn founder post | Public | Sent / live | Low positive | Pre-reset signal imported from the earlier W&Patent proof-flow workspace. Useful as history only, not as part of the new editorial sequence. |
 | `extsig-002` | `asset-001` | founder list intro note | Private | Sent | Imported feedback | Pre-reset signal imported from the earlier W&Patent proof-flow workspace. Useful as history only, not as part of the new editorial sequence. |
+| `extsig-003` | `asset-003` | LinkedIn founder post | Public | Drafted / ready | Pending manual publish | Approved copy is ready at `outputs/publishing/2026-06-07-linkedin-editorial-reset-pillar.md`. Target URL: `startup-patent-strategy.htm`. Do not mark this row live until the post is actually published from Andrew's account. |
 
 ## Reset Sequence
 
