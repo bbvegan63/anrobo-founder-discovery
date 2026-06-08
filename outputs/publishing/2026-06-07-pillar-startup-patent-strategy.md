@@ -2,7 +2,7 @@
 
 *Human Authored · AI Assisted*
 
-Andrew Leung brings a patent agent entrepreneur perspective and articulates patent strategy in founder language.
+Andrew Leung is a registered patent agent who works with founders. He brings a patent agent entrepreneur perspective and translates patent strategy into plain founder terms.
 
 Most founders hear a narrow script:
 
@@ -13,93 +13,43 @@ Most founders hear a narrow script:
 
 That script is not always wrong, but it is usually too incomplete to help a founder make good decisions with limited budget and limited time.
 
-This guide is Andrew's view of what matters more.
-
 ## Opening Thesis
 
-The patent system was not designed around founder constraints.
-It was designed around process, prosecution, and institutional default behavior.
+The patent system was built around process. Founders live inside constraints. That gap is why early patent advice often sounds tidy while skipping the parts that actually matter: what creates leverage, what needs protection before you pitch, what makes a provisional hold up, and when waiting quietly gets expensive.
 
-Founders therefore get advice that often sounds tidy but hides the real tradeoffs:
-
-- what actually creates leverage
-- what you need before you pitch
-- what makes a provisional strong
-- when waiting becomes expensive
-
-Andrew's view is that startup patent strategy should be treated as a founder decision system, not as a filing checklist.
-
-The job is not simply to file.
-The job is to decide what matters enough to protect, what signal you need now, and what sequence preserves the most optionality for the least wasted effort.
+Good startup patent strategy is not a filing checklist. It is a decision system. The real question is not simply whether to file. It is what deserves protection, what signal you need now, and what sequence preserves the most room to move for the least wasted effort.
 
 ## Provisional Before NDA
 
-Founders often act as if the first protection decision is whether to get an NDA signed.
+Most founders start with secrecy. That instinct makes sense. You do not want to show the wrong person too much too early.
 
-Andrew's view is that the more important first move is usually the provisional.
+But the first move that usually matters is not an NDA. It is a provisional filing. Investors generally do not sign NDAs. A signature may create an expectation. A filing creates a date.
 
-Why:
+That difference matters. A priority date gives you something an NDA does not: a way to speak more freely without negotiating secrecy every time the conversation starts. It also protects against the more expensive mistake of disclosing before filing and losing foreign rights.
 
-- investors generally do not sign NDAs
-- the provisional gives you a priority date
-- a filing preserves more optionality than a signature
-- if you disclose before filing, foreign rights can disappear permanently
-
-The practical founder question is not, "How do I make people promise secrecy?"
-
-It is, "What is the cheapest move that gives me room to talk freely without losing strategic options?"
-
-Most of the time, that move is filing first.
+So the real founder question is not, "How do I make people keep this confidential?" It is, "What is the cheapest step that gives me room to talk without giving away future options?" Most of the time, the answer is file first.
 
 ## Draw First. Write Second.
 
 Founders are often told that a strong provisional starts with dense written description.
 
-Andrew's view is that most founders should think about possession first, and drawings are often the clearest way to prove possession.
+The better starting point is possession. Drawings are often the clearest way to prove what you actually had on a specific date. If prior art forces you to narrow later, a concrete original disclosure gives you more room to maneuver. A vague paragraph about a bracket gives you one path. A drawing of an L-shaped bracket with a 45-degree gusset gives you several.
 
-That does not mean text is irrelevant.
-It means text without structure, diagrams, or concrete embodiments is often weaker than founders assume.
-
-If prior art forces you to narrow later, a more concrete original disclosure gives you more places to go.
-
-That is why Andrew's basic sequence is:
-
-1. draw first
-2. write second
-3. claim third
-
-This is founder language for a simple point:
-you cannot claim more than you originally showed you had.
+That is why the sequence is simple: draw first, write second, claim third. You cannot claim more than you originally showed you had.
 
 ## Build And File In Parallel
 
-Founders are often told to build first and worry about patent strategy later.
+The common advice is build first and worry about patents later.
 
-Andrew's view is that this advice breaks down when:
+That advice only works if nothing important becomes public in the meantime. Many early teams do not have that luxury. Demos get shared. Repos get shown. Partner conversations happen before the founder feels ready.
 
-- the product is already being shared
-- the core idea is visible in demos, repos, or partner conversations
-- the company has a narrow window to preserve optionality
+So the question is not whether patent work should stop product work. It is whether filing work can move alongside the engineering work that is already surfacing novelty, workflow, edge cases, and diagrams. For many early teams, the answer is yes.
 
-The right question is not whether patents should stop product work.
-The right question is whether product work and filing work can move in parallel while the founder still has the most flexibility.
-
-For many early teams, the answer is yes.
-
-The engineering work already surfaces:
-
-- what is novel
-- what the workflow is
-- what the edge cases are
-- what the diagrams should show
-
-That means the patent work can often be captured alongside building instead of being delayed until after the most important disclosure moments have already passed.
+Capture that while you are building instead of waiting until the most important disclosure moments have already passed. By then, the cheapest useful move is often gone.
 
 ## The Unifying Founder Strategy
 
-Andrew's point of view can be reduced to a few corrections:
-
-| What founders are often told | What Andrew thinks matters more |
+| What founders are often told | What matters more in practice |
 | --- | --- |
 | Get an NDA signed before you talk | File before you talk if the disclosure matters |
 | Write a dense specification first | Show possession clearly, then write to it |
@@ -107,17 +57,14 @@ Andrew's point of view can be reduced to a few corrections:
 | Filing volume proves strategy | The right protected leverage proves strategy |
 | Patent work is a legal silo | Patent work should support founder decisions |
 
-The founder goal is not to become obsessed with patents.
-It is to stop making early decisions from the wrong script.
-
-If the work does not improve leverage, optionality, or clarity, Andrew's view is that it probably is not strong startup patent strategy.
+The goal is not to become obsessed with patents. It is to stop making early decisions from the wrong script. If the work is not increasing clarity, room to move, or bargaining power, it is probably not doing enough.
 
 ## One-Paragraph Summary
 
-Most founders do not need more generic patent advice. They need clearer judgment about what matters enough to protect, when a filing matters more than an NDA, why drawings often matter more than founders think, and why delaying the filing conversation until after building can be more expensive than it looks. Andrew Leung's view is that startup patent strategy should be articulated in founder language: protect the part that creates leverage, preserve optionality early, and make the work serve the business instead of the process.
+Protect what changes bargaining position. File before disclosure when the conversation matters. Draw before you drown in prose. Capture the work while you are building, not after the window closes. That is startup patent strategy in founder terms.
 
 ## Warning & Disclaimer
 
 Human Authored · AI Assisted · Just being transparent
 
-Andrew Leung is a registered patent agent and an entrepreneur. This guide reflects general educational information and Andrew's professional judgment about early founder patent decisions. Nothing on this website constitutes legal advice nor creates an agent-client relationship. Patent laws vary by jurisdiction and change over time. For legal advice specific to your situation, consult a registered patent attorney.
+Andrew Leung is a registered patent agent and an entrepreneur. This guide reflects general educational information and professional judgment about early founder patent decisions. Nothing on this website constitutes legal advice nor creates an agent-client relationship. Patent laws vary by jurisdiction and change over time. For legal advice specific to your situation, consult a registered patent attorney.
