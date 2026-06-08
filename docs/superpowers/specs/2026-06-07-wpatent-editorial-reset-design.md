@@ -31,6 +31,26 @@ This design therefore changes the center of gravity again:
 - the sharper editorial voice becomes the new W&Patent house voice
 - older secondary pages are retired or redirected instead of lingering as competing narratives
 
+## Current Live State Being Replaced
+
+This reset is not starting from a blank site.
+It is intentionally replacing parts of the current live W&Patent surface.
+
+The main current-state facts that implementation must assume are:
+
+- `startup-patent-strategy.htm` already exists live with calmer Phase 2 strategy content and currently acts as the main strategy anchor
+- `provisional-vs-nda.htm` already exists live from the earlier support-page sequence
+- `trust-chain.htm` and `trust-chain-explainer.htm` are both live, in the sitemap, and referenced from current strategy-era pages
+- `patent-strategy-open-licensing.htm` is live, in the sitemap, and referenced from the current strategy page and supporting surfaces
+
+This means the editorial reset is doing all of the following on purpose:
+
+- replacing the current body and voice of `startup-patent-strategy.htm`
+- treating the earlier `provisional-vs-nda.htm` publication as pre-reset history and rewriting that URL in place
+- retiring or redirecting currently live secondary pages rather than merely choosing not to build them
+
+The implementation plan should therefore treat these as active migrations of live assets, not as greenfield content creation.
+
 ## Core Decision
 
 W&Patent should be rebuilt around this message:
@@ -245,6 +265,15 @@ Strong candidates include:
 - `trust-chain-explainer.htm`
 - older support notes whose main value will be absorbed into the new pillar or weekly series
 
+These are not just conceptual candidates.
+At least some of them are currently live, present in `sitemap.xml`, and linked from the current strategy-era content.
+Retirement work therefore must include:
+
+- link cleanup from surviving primary pages
+- sitemap cleanup
+- redirect or retired-helper handling
+- replacement routing to the new pillar, `About`, or `Services` as appropriate
+
 ### Redirect principle
 
 Use redirects or retired-helper treatment rather than hard deletion.
@@ -270,6 +299,9 @@ Operationally:
 
 - the earlier `provisional-vs-nda` publication is treated as pre-reset history
 - the rewritten version becomes the new week-1 version of the reset series
+
+This intentionally discards the earlier support-page sequencing as the active story.
+The weekly series should be measured as a new editorial sequence, not as a continuation of the earlier calm-voice rollout.
 
 ## External Signal Sequence
 
