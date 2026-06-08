@@ -164,6 +164,12 @@ The pillar should remain founder-useful, but it should also be willing to say:
 - what matters more than the usual script
 - what Andrew would tell a founder with limited time and budget
 
+That freedom is still bounded by the editorial guardrails below:
+
+- the pillar may be corrective
+- it may challenge standard founder advice
+- but it should not rely on factual or systemic claims that cannot be defended as either Andrew's professional judgment, a common practice pattern, or a clearly supported factual statement
+
 ## Site Surface
 
 The top-level public site should stay bare minimum.
@@ -308,7 +314,70 @@ Because the draft bundle is sharper than the current live site, the rewrite shou
 - keep practical next-step usefulness in every article
 - keep the site legally and reputationally credible even when it is blunt
 
+### Corrective But Defensible Rule
+
+The rewrite should land on the right side of this line:
+
+- corrective is good
+- blunt is acceptable
+- unsupported institutional motive claims are not
+
+Use these editorial claim classes:
+
+1. **Founder-judgment claims**
+
+   Safe:
+
+   - Andrew's point of view
+   - what Andrew would advise
+   - what tends to matter more in practice for founders
+
+2. **Observed-pattern claims**
+
+   Acceptable if framed carefully:
+
+   - what founders are commonly told
+   - what practitioners often emphasize
+   - where early-stage founders often misunderstand the tradeoff
+
+   These should be written as pattern observations, not universal accusations.
+
+3. **Hard factual or systemic claims**
+
+   Must be either supported, softened, or reframed:
+
+   - timing claims
+   - cost claims
+   - legal-effect claims
+   - process claims about examiners, firms, AI tools, or competitors
+
+   If direct support is not available, convert these into:
+
+   - a more limited claim
+   - a risk framing
+   - or Andrew's professional judgment rather than asserted fact
+
+4. **Institutional-intent claims**
+
+   Avoid unless they can be defended very strongly.
+
+   For example, replace:
+
+   - “the system doesn't want you to know”
+
+   with something closer to:
+
+   - “founders are often not told”
+   - “this part of the process is usually underexplained”
+   - “Andrew's view is that this tradeoff is often presented too narrowly”
+
 In particular, claims like competitors filing from public GitHub in 45 minutes should be softened or framed as a real risk pattern unless direct support is available.
+
+The implementation standard should therefore be:
+
+- keep the edge
+- keep the corrective energy
+- but make every strong line sound defendable if read back aloud by Andrew under scrutiny
 
 ## Non-Goals
 
