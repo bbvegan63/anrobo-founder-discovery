@@ -165,6 +165,25 @@ The main site path should stay:
 
 Founder project pages live underneath that structure.
 
+## Phase 1 Boundaries
+
+Phase 1 does not need to settle every long-term convention.
+
+Two details are explicitly deferred:
+
+- URL convention for founder project pages
+- whether existing cluster posts should deep-link to relevant founder project pages when they exist
+
+For now:
+
+- founder project pages may launch with one-off descriptive slugs if needed
+- cluster-post linkage is optional and should be decided case by case based on relevance and readability
+
+If W&Patent publishes enough founder project pages to make this page type durable, a later phase should normalize:
+
+- a stable URL pattern such as `/founder/<name>.htm`, `/projects/<slug>.htm`, or another consistent support-layer convention
+- clear internal-linking rules between the strategy cluster and founder project pages
+
 ## Service Rule
 
 Founder project pages should **not** be added as a main named service now.
