@@ -4,9 +4,11 @@
 
 - bare-minimum live shell centered on `Home`, `Strategy`, `Services`, and `About`
 - canonical strategy URL at `https://wpatent.com/startup-patent-strategy.htm`
-- Andrew Leung already visible as the founder voice on the site
+- rewritten pillar live at `startup-patent-strategy.htm`
+- Andrew Leung visible as the founder voice on the site
 - virtual marking already present as a real service line
 - a complete draft bundle for one pillar plus three founder-useful posts
+- retired helper behavior now in place for the Trust Chain cluster and open-licensing note
 - existing offsite signal history that can be treated as pre-reset context
 
 ## Missing proof
@@ -23,15 +25,15 @@
 - rewritten week-2 `provisional-and-poc-budget.htm`
 - rewritten week-3 `draw-first-write-second.htm`
 
-## Retired Or Retiring Proof Surfaces
+## Retired Proof Surfaces
 
 - `trust-chain.htm`
 - `trust-chain-explainer.htm`
 - `trust-chain-demo.htm`
 - `patent-strategy-open-licensing.htm`
 
-These pages belong to the earlier mixed strategy and are no longer assumed to be active proof destinations once the reset is live.
+These pages belonged to the earlier mixed strategy and are no longer active proof destinations.
 
 ## Smallest useful next asset
 
-- the rewritten pillar, plus the first LinkedIn reinforcement that points only to that pillar
+- the rewritten week-1 `provisional-vs-nda`, plus the first LinkedIn reinforcement that points only to that post
