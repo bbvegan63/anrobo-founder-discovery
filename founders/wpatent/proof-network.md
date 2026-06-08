@@ -7,6 +7,7 @@
 - rewritten pillar live at `startup-patent-strategy.htm`
 - Andrew Leung visible as the founder voice on the site
 - virtual marking already present as a real service line
+- first founder project page pattern live at `dashing-robo-founder-project.htm`
 - a complete draft bundle for one pillar plus three founder-useful posts
 - retired helper behavior now in place for the Trust Chain cluster and open-licensing note
 - existing offsite signal history that can be treated as pre-reset context

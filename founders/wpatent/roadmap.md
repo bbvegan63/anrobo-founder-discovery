@@ -20,6 +20,7 @@
 - `2026-06-07`: Trust Chain and open-licensing pages were retired as helper URLs and removed from the sitemap
 - `2026-06-07`: the current live `provisional-vs-nda.htm` remains pre-reset history and will be rewritten in place as week 1
 - `2026-06-07`: the weekly series is being treated as a new editorial sequence, not a continuation of the older calm-voice rollout
+- `2026-06-08`: first founder project page pattern launched with `dashing-robo-founder-project.htm` as a support-layer page, not a new primary service
 
 ## What Counts As Week 0
 
