@@ -17,10 +17,10 @@
 - retired helper behavior now in place for the Trust Chain cluster and open-licensing note
 - existing offsite signal history that can be treated as pre-reset context
 - June 8 Exa and local OAuth baseline confirms the current live surface is still not being retrieved under W&Patent or Andrew Leung
+- first post-reset pillar LinkedIn reinforcement now live by user confirmation
 
 ## Missing proof
 
-- live pillar reinforcement under the new sharper house voice
 - repeated offsite reinforcement that answer systems can associate with the pillar and cluster posts
 - OpenFor public recognition under the new editorial story
 - repeated founder / company / topic linkage offsite
@@ -43,4 +43,4 @@ These pages belonged to the earlier mixed strategy and are no longer active proo
 
 ## Smallest useful next asset
 
-- the first LinkedIn reinforcement for the flagship pillar at `startup-patent-strategy.htm`
+- the next cluster-post reinforcement for `provisional-vs-nda.htm`

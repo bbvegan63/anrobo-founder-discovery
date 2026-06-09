@@ -1,6 +1,6 @@
 # W&Patent Scorecard
 
-> **Version:** 2026-06-07
+> **Version:** 2026-06-08
 > **Role:** Editorial reset active baseline
 
 ## Summary Dashboard
@@ -22,7 +22,7 @@
 | Broad discovery fixed pack (`exa_answer`, latest saved reads) | 10 | 0/10 | 0-1/10 | 0/10 |
 | Broad diagnostic (`openai_local_oauth`, latest saved reads) | 10 | 0/10 | 0/10 | 0/10 |
 | Editorial reset sequence | pillar + weekly series not yet launched | - | - | - |
-| External reinforcement | LinkedIn / OpenFor reset sequence not yet live | - | - | - |
+| External reinforcement | pillar LinkedIn reinforcement is now live; OpenFor and cluster-post reinforcements still pending | - | - | - |
 
 ## Current Read
 
