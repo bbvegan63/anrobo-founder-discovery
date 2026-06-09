@@ -3,9 +3,12 @@
 ## Public Facts
 
 - Project name: `Dashing Robo`
+- Legal entity: `Anrobo, Inc.`
+- Public website: `https://dashingrobo.com`
 - Short product description: a robotics logistics project focused on autonomous payload docking, elevator coordination, and delivery movement inside buildings
 - Public current status: active founder project; do not publish `pilot` language until there is a public or permissioned source for it
-- Patent status wording approved for publication: described here only as patent-pending or non-issued work, not as an issued patent and not as virtual marking
+- Confirmed filing: `U.S. Provisional Application No. 64/051,103`
+- Application title: `System and Method for Autonomous Payload Docking`
 - Public links reviewed:
   - historical W&Patent listings page in repo history (`2971c6f:listings.htm`)
   - historical W&Patent detail page in repo history (`2971c6f:listing-dashing-robo.htm`)
@@ -13,8 +16,9 @@
 ## Approved Claims
 
 - Dashing Robo has previously been described on W&Patent as a robotics logistics concept involving autonomous payload docking and building-delivery workflows.
-- This page exists to explain the founder project in plain language, not to offer it for sale or licensing.
-- The patent status on this page must stay non-issued unless independently updated with new approved facts.
+- Dashing Robo is a founder project from Anrobo, Inc.
+- The project has a public website at `https://dashingrobo.com`.
+- The founders behind Anrobo, Inc. have filed `U.S. Provisional Application No. 64/051,103`, titled `System and Method for Autonomous Payload Docking`.
 
 ## Claims To Avoid
 
@@ -26,5 +30,5 @@
 ## Page Intent
 
 - This page exists to explain the founder project in plain language.
-- This page exists to state patent status accurately.
+- This page exists to connect the public project name, the legal entity, the website, and the confirmed provisional filing.
 - This page exists to route readers back to W&Patent strategy and services surfaces.

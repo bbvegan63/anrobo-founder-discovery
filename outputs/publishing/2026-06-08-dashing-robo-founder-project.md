@@ -4,19 +4,11 @@
 
 ## What Dashing Robo is
 
-Dashing Robo is a robotics logistics project shaped around autonomous payload docking, building movement, and delivery workflows inside multi-floor environments. The point of this page is not to make the project sound larger than it is. The point is to make the technical idea legible in founder language.
+Dashing Robo is a founder project from Anrobo, Inc., built around robotics logistics technology for autonomous payload docking and delivery workflows inside buildings. Public website: `https://dashingrobo.com`.
 
-## Patent status
+The project is aimed at a practical bottleneck in indoor logistics: handoffs. When docking, transfer, or movement between building systems breaks down, the whole workflow slows down. Dashing Robo is aimed at that bottleneck in a plain, practical way.
 
-This project should be understood here as patent-pending or otherwise non-issued work, not as an issued patent. This page is not a virtual marking page, and it should not be read as one.
-
-## Why this page exists
-
-Some founders need a clearer public project surface before they need virtual marking. A page like this can explain what the project is, what technical angle matters, and how the patent status should be understood without collapsing into marketplace language or vague hype.
-
-## What this page is not
-
-This is not a listing page. This is not a sale offer. This is not a licensing page. This is not a virtual marking page for an issued patent.
+The founders behind Anrobo, Inc. have already filed a provisional patent application related to the project: U.S. Provisional Application No. 64/051,103, "System and Method for Autonomous Payload Docking."
 
 ## Next step
 
